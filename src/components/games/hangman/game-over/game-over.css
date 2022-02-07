@@ -1,0 +1,14 @@
+.restartImage {
+    width: 20px;
+}
+
+.gameOver {
+    font-weight: bold;
+    font-size: 40px;
+    padding: 2%;
+}
+
+.correctWord {
+    font-weight: bold;
+    font-size: 30px;
+}

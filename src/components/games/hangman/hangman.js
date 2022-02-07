@@ -25,7 +25,7 @@ export default function Hangman() {
         const randomWord = resJson[0].toLowerCase();
         dispatch(
           guessedLettersAction({
-            guessedLetters: new ArÏray(randomWord.length).fill(null),
+            guessedLetters: new Array(randomWord.length).fill(null),
           })
         );
         dispatch(wordAction({ word: randomWord }));

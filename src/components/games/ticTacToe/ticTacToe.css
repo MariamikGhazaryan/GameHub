@@ -1,7 +1,64 @@
-.tic-tac-toe {
-    height: 150px;
-    width: 150px;
-    margin: 20px;
-    padding: 20px;
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    background: black;
+ }
+
+.wrapper {
+    margin:auto;
+    padding: 10px;
+    max-width: 400px;
+    font-family: 'Press Start 2P', cursive;
+    background: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+
+}
+.board {
+    height: 300px;
+    width: 300px;
+    background: rgb(32 138 168);
+    display: flex;
+    flex-wrap: wrap;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    background: rgb(32 138 168);
+    border: 1px solid rgb(32 138 168);
+    cursor:pointer;
+    outline: none;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square:hover {
+    background: linear-gradient(to top left, rgba(10, 90, 134, 0.99), rgba(250, 251, 252, 0.9));
+    transition: all 0.3s;
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+.restart {
+    font-family: 'Press Start 2P', cursive;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    color: black;
+    background: rgb(32 138 168);
+    outline: none;
+    border:  1px solid rgb(32 138 168);
+    font-size: 20px;
+}
+.restart:hover {
+    background: linear-gradient(to top left, rgba(10, 90, 134, 0.99), rgba(250, 251, 252, 0.9));
+    transition: all 0.3s;
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+.info {
+    margin-top: 10px;
+    color: rgb(32 138 168);
 }

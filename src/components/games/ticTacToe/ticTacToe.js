@@ -25,6 +25,7 @@ const TicTacToe = () => {
     return (
 
         <div className='wrapper'>
+            <h1 className='info'>Tic Tac Toe</h1>
             <button className='restart' onClick={reStart}>Restart</button>
             <Board squares={board} click={handleButton} />
             <p className='info'>

@@ -6,11 +6,13 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   guessedLettersAction,
   wordAction,
+  wrongLettersAction,
 } from "../../../redux/ducks/HangManDuck";
 import { hangManSelector } from "../../../redux/selectors";
 import GameOver from "./game-over/game-over";
 import Win from "./win/win";
 import HangmanPicture from "./hangman-picture/hangman-picture";
+import Score from "./score/score";
 
 export default function Hangman() {
   const { wrongLetters, guessedLetters, restart } =
@@ -30,11 +32,29 @@ export default function Hangman() {
         );
         dispatch(wordAction({ word: randomWord }));
       });
+    return () => {
+      dispatch(
+        guessedLettersAction({
+          guessedLetters: [],
+        })
+      );
+      dispatch(
+        wrongLettersAction({
+          wrongLetters: [],
+        })
+      );
+      dispatch(
+        wordAction({
+          word: "",
+        })
+      );
+    };
   }, [restart]);
 
   const isGameOver = () => wrongLetters.length === 6;
-
-  const isWin = () => guessedLetters.filter((item) => !item).length === 0;
+  const isWin = () =>
+    guessedLetters.length &&
+    guessedLetters.filter((item) => !item).length === 0;
 
   return (
     <div className="container">
@@ -45,6 +65,7 @@ export default function Hangman() {
           <>
             <WordPlaceholder />
             <Letters />
+            <Score />
           </>
         )}
         {isGameOver() && <GameOver />}

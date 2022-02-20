@@ -6,13 +6,14 @@ import "./games.css";
 
 const Games = () => {
   const TicTacToe = lazy(() => import("./ticTacToe/ticTacToe"));
-  const Hangman = lazy(() => import("./hangman/hangman"));
   const MatchGame = lazy(() => import("./matchgame/match"));
+  const Hangman = lazy(() => import("./hangman/hangman"));
+  const Tetris = lazy(() => import("./tetris/tetris"));
 
 
   return (
     <div className="games">
-      <div>
+			<div>
         <NavLink className="navLink" to="tic-tac-toe">
           Tic-Tac-Toe
         </NavLink>
@@ -22,12 +23,16 @@ const Games = () => {
         <NavLink className="navLink" to="hangman">
           Hangman
         </NavLink>
+        <NavLink className="navLink" to="tetris">
+          Tetris
+        </NavLink>
       </div>
       <Suspense fallback={<div>...Loading</div>}>
         <Routes>
           <Route path="tic-tac-toe" element={<TicTacToe />} />
           <Route path="match_game" element={<MatchGame />} />
           <Route path="hangman" element={<Hangman />} />
+          <Route path="tetris" element={<Tetris />} />
         </Routes>
       </Suspense>
     </div>

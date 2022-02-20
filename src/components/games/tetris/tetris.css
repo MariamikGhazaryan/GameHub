@@ -1,0 +1,17 @@
+.container-tetris {
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+    background-color: black;
+    padding: 2% 30%;
+    display: flex;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    font-family: 'Courier New', monospace;
+    background-color: black;
+    margin: 0;
+    text-align: center;
+}

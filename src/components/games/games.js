@@ -2,19 +2,23 @@ import { NavLink, Route, Routes } from "react-router-dom";
 import React, { lazy, Suspense } from "react";
 
 import "./games.css";
-
+import { useSelector } from "react-redux";
+import { userSelector } from "../../redux/selectors";
+import PleaseLogin from "../please-login/please-login";
 
 const Games = () => {
+  const { currentUser } = useSelector(userSelector);
+
   const TicTacToe = lazy(() => import("./ticTacToe/ticTacToe"));
   const MatchGame = lazy(() => import("./matchgame/match"));
   const Hangman = lazy(() => import("./hangman/hangman"));
   const Sapper = lazy(() => import("./sapper/sapper"))
   const Tetris = lazy(() => import("./tetris/tetris"));
-
+  const NumberPuzzle = lazy(() => import("./numberPuzzle/numberPuzzle"));
 
   return (
     <div className="games">
-			<div>
+      <div>
         <NavLink className="navLink" to="tic-tac-toe">
           Tic-Tac-Toe
         </NavLink>
@@ -30,16 +34,32 @@ const Games = () => {
         <NavLink className="navLink" to="tetris">
           Tetris
         </NavLink>
+        <NavLink className="navLink" to="number-puzzle">
+          Number puzzle
+        </NavLink>
       </div>
-      <Suspense fallback={<div>...Loading</div>}>
-        <Routes>
-          <Route path="tic-tac-toe" element={<TicTacToe />} />
-          <Route path="match_game" element={<MatchGame />} />
-          <Route path="hangman" element={<Hangman />} />
+      <div className="games-container">
+        <Suspense fallback={<div>...Loading</div>}>
+          <Routes>
+            <Route
+            path="tic-tac-toe"
+            element={currentUser ? <TicTacToe /> : <PleaseLogin />}
+          />
+            <Route
+            path="match_game"
+            element={currentUser ? <MatchGame /> : <PleaseLogin />}
+          />
+            <Route
+            path="hangman"
+            element={currentUser ? <Hangman /> : <PleaseLogin />} />
           <Route path="sapper" element={<Sapper />} />
-          <Route path="tetris" element={<Tetris />} />
-        </Routes>
-      </Suspense>
+          <Route path="tetris"
+            element={currentUser ? <Tetris /> : <PleaseLogin />}
+          />
+            <Route path="number-puzzle" element={<NumberPuzzle />} />
+          </Routes>
+        </Suspense>
+      </div>
     </div>
   );
 };

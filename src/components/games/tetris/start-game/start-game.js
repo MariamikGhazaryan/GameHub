@@ -1,13 +1,6 @@
 import "./start-game.css";
-import {
-  isTetrominoMergedAction,
-  intervalAction,
-  gameOverAction,
-  playGroundAction,
-  positionAction,
-  tetrominoAction,
-} from "../../../../redux/ducks/TetrisDuck";
-import { getRandomTetromino, HEIGHT, WIDTH } from "../tetrominoes";
+import { updateAllAction } from "../../../../redux/ducks/TetrisDuck";
+import { createPlayGround, getRandomTetromino, WIDTH } from "../tetrominoes";
 import { useDispatch } from "react-redux";
 
 export default function StartGameButton() {
@@ -15,38 +8,17 @@ export default function StartGameButton() {
 
   const startGame = () => {
     dispatch(
-      playGroundAction({
-        playGround: Array.from(Array(HEIGHT), () =>
-          new Array(WIDTH).fill([0, "clear"])
-        ),
-      })
-    );
-    dispatch(
-      positionAction({
+      updateAllAction({
+        playGround: createPlayGround(),
         position: { x: WIDTH / 2 - 2, y: 0 },
-      })
-    );
-
-    dispatch(
-      tetrominoAction({
         tetromino: getRandomTetromino().matrix,
-      })
-    );
-    dispatch(
-      isTetrominoMergedAction({
         isTetrominoMerged: false,
-      })
-    );
-
-    dispatch(
-      intervalAction({
-        interval: 1000,
-      })
-    );
-
-    dispatch(
-      gameOverAction({
         gameOver: false,
+        win: false,
+        clearedRowsCount: 0,
+        interval: 1000,
+        level: 1,
+        score: 0,
       })
     );
   };

@@ -7,9 +7,12 @@ import "./App.css";
 
 function App() {
   const Games = lazy(() => import("./components/games/games"));
-  const News = lazy(() => import("./components/news/news"));
-  const Support = lazy(() => import("./components/support/support"));
+  const About = lazy(() => import("./components/about/about"));
   const MyAccount = lazy(() => import("./components/myAccount/myAccount"));
+  const Login = lazy(() => import("./components/login/login"));
+  const Registration = lazy(() =>
+    import("./components/registration/registration")
+  );
 
   return (
     <div className="">
@@ -17,9 +20,10 @@ function App() {
       <Suspense fallback={<div>...Loading</div>}>
         <Routes>
           <Route path="games/*" element={<Games />} />
-          <Route path="news" element={<News />} />
-          <Route path="support" element={<Support />} />
+          <Route path="about" element={<About />} />
           <Route path="my-account" element={<MyAccount />} />
+          <Route path="login" element={<Login />} />
+          <Route path="registration" element={<Registration />} />
         </Routes>
       </Suspense>
       <Footer />

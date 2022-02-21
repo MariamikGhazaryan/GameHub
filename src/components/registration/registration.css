@@ -1,0 +1,56 @@
+.registration-container {
+    padding: 15% 30% 10%;
+    background-color: black;
+    font-family: sans-serif;
+
+}
+.registration-title {
+    text-align: center;
+    color:white;
+    font-family: sans-serif;
+
+}
+
+input {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: sans-serif;
+
+}
+
+.registerButton {
+    background-color: royalblue;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    font-family: sans-serif;
+
+}
+
+.loginButton {
+    background-color: whitesmoke;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+    font-family: sans-serif;
+
+}
+
+
+.warning {
+    color: red;
+    font-family: sans-serif;
+}

@@ -1,11 +1,10 @@
 import "./level.css";
 import { useDispatch, useSelector } from "react-redux";
 import { tetrisSelector } from "../../../../redux/selectors";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import {
   intervalAction,
   levelAction,
-  scoreAction,
   winAction,
 } from "../../../../redux/ducks/TetrisDuck";
 
@@ -26,7 +25,7 @@ export default function Level() {
           interval: 1000 / newLevel,
         })
       );
-      if (newLevel === 2) {
+      if (newLevel === 10) {
         dispatch(
           winAction({
             win: true,

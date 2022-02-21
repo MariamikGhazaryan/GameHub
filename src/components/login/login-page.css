@@ -1,0 +1,43 @@
+.container {
+    padding: 10px 130px;
+}
+
+.title {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.loginButton {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    float: right;
+}
+
+button[type=button] {
+    background-color: whitesmoke;
+
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    float: left;
+}
+
+.warning {
+    color: red;
+}

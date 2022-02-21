@@ -1,0 +1,8 @@
+.game-over {
+    color: red;
+    background: black;
+    border: double;
+    margin: 13px 4px 20px 18px;
+    padding: 15px;
+    border-radius: 20px;
+}

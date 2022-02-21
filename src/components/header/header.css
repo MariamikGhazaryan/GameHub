@@ -9,7 +9,6 @@
     height: 10vh;
     align-items: center;
     background-color: black;
-
 }
 
 .header a {
@@ -23,7 +22,18 @@
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
 }
-
+.header button {
+    margin: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 13px 17px 10px;
+    border: none;
+    color: #fff;
+    box-shadow: 0 0 40px 40px rgba(32, 138, 168, 0.99) inset, 0 0 0 0 #0549ea;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+}
 .header .active {
     color: #000;
     background: linear-gradient(to top left, rgba(10, 90, 134, 0.99), rgba(250, 251, 252, 0.9));

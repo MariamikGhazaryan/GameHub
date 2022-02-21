@@ -24,8 +24,8 @@ export default function Restart() {
     );
   };
   return (
-    <div className="restart">
-      Dou you want to restart?{" "}
+    <div className="restart-hangman">
+      Dou you want to restart?
       <img
         className="restartImage"
         src={restartImg}

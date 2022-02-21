@@ -6,6 +6,7 @@ import "./games.css";
 const Games = () => {
   const TicTacToe = lazy(() => import("./ticTacToe/ticTacToe"));
   const Hangman = lazy(() => import("./hangman/hangman"));
+  const Sapper = lazy(() => import("./sapper/sapper"))
 
   return (
     <div className="games">
@@ -16,11 +17,15 @@ const Games = () => {
         <NavLink className="navLink" to="hangman">
           Hangman
         </NavLink>
+        <NavLink className="navLink" to="sapper">
+          Sapper
+        </NavLink>
       </div>
       <Suspense fallback={<div>...Loading</div>}>
         <Routes>
           <Route path="tic-tac-toe" element={<TicTacToe />} />
           <Route path="hangman" element={<Hangman />} />
+          <Route path="sapper" element={<Sapper />} />
         </Routes>
       </Suspense>
     </div>

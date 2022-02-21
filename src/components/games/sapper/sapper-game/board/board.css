@@ -1,0 +1,13 @@
+.board {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    color: rgba(45, 166, 252, 0.99);
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}

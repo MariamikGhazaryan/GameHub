@@ -8,7 +8,7 @@ const Games = () => {
   const TicTacToe = lazy(() => import("./ticTacToe/ticTacToe"));
   const Hangman = lazy(() => import("./hangman/hangman"));
   const MatchGame = lazy(() => import("./matchgame/match"));
-
+  const NumberPuzzle = lazy(() => import("./numberPuzzle/numberPuzzle"));
 
   return (
     <div className="games">
@@ -22,14 +22,20 @@ const Games = () => {
         <NavLink className="navLink" to="hangman">
           Hangman
         </NavLink>
+        <NavLink className="navLink" to="number-puzzle">
+          Number puzzle
+        </NavLink>
       </div>
-      <Suspense fallback={<div>...Loading</div>}>
-        <Routes>
-          <Route path="tic-tac-toe" element={<TicTacToe />} />
-          <Route path="match_game" element={<MatchGame />} />
-          <Route path="hangman" element={<Hangman />} />
-        </Routes>
-      </Suspense>
+      <div className="games-container">
+        <Suspense fallback={<div>...Loading</div>}>
+          <Routes>
+            <Route path="tic-tac-toe" element={<TicTacToe />} />
+            <Route path="match_game" element={<MatchGame />} />
+            <Route path="hangman" element={<Hangman />} />
+            <Route path="number-puzzle" element={<NumberPuzzle />} />
+          </Routes>
+        </Suspense>
+      </div>
     </div>
   );
 };

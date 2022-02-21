@@ -11,6 +11,7 @@ import {
   positionAction,
   clearedRowsCountAction,
   tetrominoAction,
+  updateAllAction,
 } from "../../../redux/ducks/TetrisDuck";
 import {
   isMoveInCorrect,
@@ -23,10 +24,12 @@ import { useInterval } from "./hooks/useInterval";
 import Level from "./level/level";
 import Score from "./score/score";
 import GameOver from "./game-over/game-over";
+import Win from "./win/win";
 
 export default function Tetris() {
   const {
     gameOver,
+    win,
     position,
     playGround,
     tetromino,
@@ -41,41 +44,27 @@ export default function Tetris() {
   }, interval);
 
   useEffect(() => {
+    dispatch(
+      intervalAction({
+        interval: null,
+      })
+    );
+  }, [win]);
+
+  useEffect(() => {
     return () => {
       dispatch(
-        playGroundAction({
+        updateAllAction({
           playGround: createPlayGround(),
-        })
-      );
-      dispatch(
-        positionAction({
           position: { x: 0, y: 0 },
-        })
-      );
-      dispatch(
-        tetrominoAction({
           tetromino: null,
-        })
-      );
-      dispatch(
-        isTetrominoMergedAction({
           isTetrominoMerged: false,
-        })
-      );
-      dispatch(
-        gameOverAction({
           gameOver: false,
-        })
-      );
-
-      dispatch(
-        clearedRowsCountAction({
+          win: false,
           clearedRowsCount: 0,
-        })
-      );
-      dispatch(
-        intervalAction({
           interval: 1000,
+          level: 1,
+          score: 0,
         })
       );
     };
@@ -122,7 +111,7 @@ export default function Tetris() {
   }, [isTetrominoMerged, position.x, position.y, tetromino]);
 
   const move = ({ keyCode }) => {
-    if (!gameOver) {
+    if (!gameOver && !win) {
       if (keyCode === 37) {
         //arrow left
         moveToLeftOrRight(-1);
@@ -212,9 +201,28 @@ export default function Tetris() {
 
   const rotateTetromino = (p, dir) => {
     let clonedTetromino = JSON.parse(JSON.stringify(tetromino));
+    clonedTetromino = rotateMatrix(clonedTetromino);
+    const currentX = position.x;
+    let offset = 1;
+    while (
+      isMoveInCorrect(clonedTetromino, position, playGround, { x: 0, y: 0 })
+    ) {
+      position.x += offset;
+      offset = -(offset + (offset > 0 ? 1 : -1));
+      if (offset > clonedTetromino[0].length) {
+        rotateMatrix(clonedTetromino, -dir);
+        position.x = currentX;
+        return;
+      }
+    }
+    dispatch(
+      positionAction({
+        position: { x: position.x, y: position.y },
+      })
+    );
     dispatch(
       tetrominoAction({
-        tetromino: rotateMatrix(clonedTetromino),
+        tetromino: clonedTetromino,
       })
     );
   };
@@ -234,6 +242,7 @@ export default function Tetris() {
           <Score />
           <StartGameButton />
           {gameOver && <GameOver />}
+          {win && <Win />}
         </aside>
       </div>
     </div>

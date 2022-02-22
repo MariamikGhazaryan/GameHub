@@ -5,6 +5,7 @@ import "./games.css";
 import { useSelector } from "react-redux";
 import { userSelector } from "../../redux/selectors";
 import PleaseLogin from "../please-login/please-login";
+// import {images} from '../../helpers/carousel_images_array'
 
 const Games = () => {
   const { currentUser } = useSelector(userSelector);
@@ -15,12 +16,13 @@ const Games = () => {
   const Sapper = lazy(() => import("./sapper/sapper"))
   const Tetris = lazy(() => import("./tetris/tetris"));
   const NumberPuzzle = lazy(() => import("./numberPuzzle/numberPuzzle"));
-  const LeaderBoard = lazy(() => import("./leaderboard/leaderboard"));
+  const Genaral = lazy(() => import("./general/general"));
 
   return (
     <div className="games">
       <div>
         <NavLink className="navLink" to="tic-tac-toe">
+          {/* {images[5].img} */}
           Tic-Tac-Toe
         </NavLink>
         <NavLink className="navLink" to="match_game">
@@ -60,7 +62,7 @@ const Games = () => {
             <Route path="number-puzzle" element={<NumberPuzzle />} />
             <Route
               path="/"
-              element={<LeaderBoard />}
+              element={<Genaral />}
             />
           </Routes>
         </Suspense>

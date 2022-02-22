@@ -5,7 +5,7 @@ import "./games.css";
 import { useSelector } from "react-redux";
 import { userSelector } from "../../redux/selectors";
 import PleaseLogin from "../please-login/please-login";
-// import {images} from '../../helpers/carousel_images_array'
+
 
 const Games = () => {
   const { currentUser } = useSelector(userSelector);
@@ -22,7 +22,6 @@ const Games = () => {
     <div className="games">
       <div>
         <NavLink className="navLink" to="tic-tac-toe">
-          {/* {images[5].img} */}
           Tic-Tac-Toe
         </NavLink>
         <NavLink className="navLink" to="match_game">

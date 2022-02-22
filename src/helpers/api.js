@@ -30,20 +30,28 @@ export const register = (path, body, auth) => {
     });
 };
 
-export const update = (path, body, auth) => {
+export const deleteUser = (path) => {
+  return axios.delete(`${api}/${path}`);
+};
+
+
+export const getScores = (path) => {
+  return axios.get(`${api}/${path}`);
+};
+
+export const getScoresByUserId = (path, currentUserId) => {
+  return axios.get(`${api}/${path}?userId=${currentUserId}`);
+};
+
+export const addScore = (path, body) => {
   return axios
-    .put(
+    .post(
       `${api}/${path}`,
       {
         ...body,
-      },
-      { auth }
+      }
     )
     .then((resp) => {
       return resp;
     });
-};
-
-export const deleteUser = (path) => {
-  return axios.delete(`${api}/${path}`);
-};
+}

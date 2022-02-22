@@ -1,13 +1,6 @@
 {
   "users": [
-    {
-      "firstName": "asd",
-      "lastName": "asd",
-      "email": "asd@m",
-      "password": "asdasd",
-      "scores": {},
-      "id": 1
-    }
   ],
-  "scores": []
+  "scores": [
+  ]
 }

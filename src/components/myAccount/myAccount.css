@@ -1,4 +1,35 @@
 .myAccount {
     height: 85vh;
     padding-top: 100px;
+    font-family: sans-serif;
 }
+
+.deleteAccountButton{
+    font-family: sans-serif;
+    display: block;
+    color: black;
+    padding: 14px 24px;
+    margin: 8px 4%;
+    border: none;
+    cursor: pointer;
+    background: red;
+    border-radius: 5px;
+    float: right;
+}
+
+.scoreItem {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 9px 12px;
+    list-style-type: none;
+    margin: 0 65px 5px;
+}
+
+.userCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    display: inline-table;
+    margin: 0 65px 5px;
+    padding: 15px 40px;
+}
+

@@ -33,7 +33,6 @@ export default function Registration() {
       lastName,
       email,
       password,
-      scores: {},
     };
     const auth = {
       email: email,

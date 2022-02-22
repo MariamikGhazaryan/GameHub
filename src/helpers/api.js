@@ -1,7 +1,7 @@
 const api = "http://localhost:3000";
 const axios = require("axios");
 
-export const getUser = (path) => {
+export const getData = (path) => {
   return axios.get(`${api}/${path}`);
 };
 
@@ -32,11 +32,6 @@ export const register = (path, body, auth) => {
 
 export const deleteUser = (path) => {
   return axios.delete(`${api}/${path}`);
-};
-
-
-export const getScores = (path) => {
-  return axios.get(`${api}/${path}`);
 };
 
 export const getScoresByUserId = (path, currentUserId) => {

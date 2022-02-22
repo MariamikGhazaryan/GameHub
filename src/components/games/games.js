@@ -15,6 +15,7 @@ const Games = () => {
   const Sapper = lazy(() => import("./sapper/sapper"))
   const Tetris = lazy(() => import("./tetris/tetris"));
   const NumberPuzzle = lazy(() => import("./numberPuzzle/numberPuzzle"));
+  const LeaderBoard = lazy(() => import("./leaderboard/leaderboard"));
 
   return (
     <div className="games">
@@ -57,6 +58,10 @@ const Games = () => {
             element={currentUser ? <Tetris /> : <PleaseLogin />}
           />
             <Route path="number-puzzle" element={<NumberPuzzle />} />
+            <Route
+              path="/"
+              element={<LeaderBoard />}
+            />
           </Routes>
         </Suspense>
       </div>

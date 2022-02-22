@@ -16,7 +16,7 @@ const MyAccount = () => {
   useEffect(() => {
     getScoresByUserId(`scores`, currentUser.id)
       .then(res => setScores(res.data));
-  });
+  }, []);
 
   const handleDeleteAccount = () => {
     dispatch(
@@ -27,6 +27,7 @@ const MyAccount = () => {
     localStorage.removeItem("user");
 
     deleteUser(`users/${currentUser.id}`).then();
+    scores.forEach(item => deleteUser(`scores/${item.id}`).then());
     navigate("../registration");
   };
 

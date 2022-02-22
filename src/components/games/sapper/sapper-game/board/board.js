@@ -2,7 +2,13 @@ import React,{useState,useEffect} from 'react';
 import CreateBoard from '../../utils/createBoard';
 import { revealed } from "../../utils/reveal";
 import Cell from './cell/cell';
-import './board.css'
+import './board.css';
+
+const ROW = 10;
+const COlUMN = 10;
+const MINES = 20;
+const NO_MINES_CELLS_QUANTITY = ROW * COlUMN - MINES;
+
 function Board() {
 	const [ grid, setGrid ] = useState([]);
 	const [ nonMinecount, setNonMinecount ] = useState(0);
@@ -15,8 +21,8 @@ function Board() {
 	},[] );
 
 	const freshBoard = () => {
-		const newBoard=CreateBoard(10,10,20);
-		setNonMinecount(10 * 10-20);
+		const newBoard = CreateBoard(ROW,COlUMN,MINES);
+		setNonMinecount(NO_MINES_CELLS_QUANTITY);
 		setmineLocation(newBoard.mineLocation);
 		setGrid(newBoard.board);
 	}
@@ -53,6 +59,7 @@ function Board() {
 	return (
 		<div className="parent">
 			<div>
+				<h3> score - { NO_MINES_CELLS_QUANTITY - nonMinecount} </h3>
 				<h3> Non-Mines - {nonMinecount} </h3>
 				{grid.map(( singlerow, index1)=>{
 					return (

@@ -15,7 +15,7 @@ const Games = () => {
   const Sapper = lazy(() => import("./sapper/sapper"))
   const Tetris = lazy(() => import("./tetris/tetris"));
   const NumberPuzzle = lazy(() => import("./numberPuzzle/numberPuzzle"));
-  const LeaderBoard = lazy(() => import("./leaderboard/leaderboard"));
+  const Genaral = lazy(() => import("./general/general"));
 
   return (
     <div className="games">
@@ -29,11 +29,11 @@ const Games = () => {
         <NavLink className="navLink" to="hangman">
           Hangman
         </NavLink>
-        <NavLink className="navLink" to="sapper">
-          Sapper
-        </NavLink>
         <NavLink className="navLink" to="tetris">
           Tetris
+        </NavLink>
+        <NavLink className="navLink" to="sapper">
+          Sapper
         </NavLink>
         <NavLink className="navLink" to="number-puzzle">
           Number puzzle
@@ -60,7 +60,7 @@ const Games = () => {
             <Route path="number-puzzle" element={<NumberPuzzle />} />
             <Route
               path="/"
-              element={<LeaderBoard />}
+              element={<Genaral />}
             />
           </Routes>
         </Suspense>

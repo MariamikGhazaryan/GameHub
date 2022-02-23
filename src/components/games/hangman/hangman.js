@@ -21,10 +21,11 @@ export default function Hangman() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    fetch("https://random-word-api.herokuapp.com/word?number=1&lang=en")
+    fetch("https://random-words-api.vercel.app/word")
       .then((res) => res.json())
       .then((resJson) => {
-        const randomWord = resJson[0].toLowerCase();
+        console.log(resJson.word)
+        const randomWord = resJson[0].word[0].toLowerCase();
         dispatch(
           guessedLettersAction({
             guessedLetters: new Array(randomWord.length).fill(null),
@@ -52,13 +53,17 @@ export default function Hangman() {
   }, [restart]);
 
   const isGameOver = () => wrongLetters.length === 6;
-  const isWin = () =>
-    guessedLetters.length &&
-    guessedLetters.filter((item) => !item).length === 0;
+  const isWin = () =>{
+    console.log(guessedLetters.length &&
+      guessedLetters.filter((item) => !item).length === 0)
+    return guessedLetters.length &&
+      guessedLetters.filter((item) => !item).length === 0
+  }
+    
 
   return (
-    <div className="container">
-      <h1>Hangman</h1>
+    <div className="hangman-container">
+      <h1 className='hangman'>Hangman</h1>
       <div>
         <HangmanPicture />
         {!isGameOver() && !isWin() && (
@@ -69,7 +74,7 @@ export default function Hangman() {
           </>
         )}
         {isGameOver() && <GameOver />}
-        {isWin() && <Win />}
+        {!!isWin() && <Win />}
       </div>
     </div>
   );

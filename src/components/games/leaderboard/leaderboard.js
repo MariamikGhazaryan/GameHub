@@ -51,7 +51,7 @@ export default function LeaderBoard () {
 	}
 
 	return (<div className="leaderboard-container">
-		<h2>Leader Board</h2>
+		<h2 className='leaderboard-title'>Leader Board</h2>
 		<select
 			value={filterSelectValue}
 			onChange={handleSelectValue}

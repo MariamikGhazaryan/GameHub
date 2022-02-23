@@ -6,7 +6,7 @@ const create_button = (act, label) => {
   return ({ dispatch }) => {
     return (
       <button
-        class="btn"
+        className="btn"
         onClick={() => {
           dispatch({ type: act });
         }}

@@ -15,7 +15,8 @@ function App() {
   );
 
   return (
-    <div className="">
+    <div className="page_container">
+    <div className="content_wrap">
       <Header />
       <Suspense fallback={<div>...Loading</div>}>
         <Routes>
@@ -26,6 +27,7 @@ function App() {
           <Route path="registration" element={<Registration />} />
         </Routes>
       </Suspense>
+      </div>
       <Footer />
     </div>
   );

@@ -27,12 +27,15 @@ td, th {
 th:nth-child(1) {
     width: 700px;
 }
+
 th:nth-child(2) {
     width: 550px;
 }
+
 th:nth-child(3) {
     width: 350px;
 }
+
 .leaderboard-container {
     padding: 11px 0;
     margin: 3% 20px;

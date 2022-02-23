@@ -3,13 +3,15 @@
     background-color: darkgray;
     padding-top: 100px;
 }
+
 .info {
     width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-content: center;
     margin-top: 20px;
 }
+
 .image {
     width: 20%;
     height: 200px;
@@ -17,10 +19,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .text {
     width: 80%;
     margin: 0px 10px;
 }
-.text h2{
-    margin:0;
+
+.text h2 {
+    margin: 0;
 }

@@ -4,69 +4,70 @@
 /*body{*/
 /*   background: black;*/
 /*}*/
- .title {
-   margin: 5% 35%;
-   padding: 10px;
-   max-width: 400px;
-   font-family: 'Press Start 2P', cursive;
-   text-align: center;
-   background: black;
-   color: #a5a524;
-   box-shadow: 0 0 10px 0 #75a719 inset, 0 0 10px 4px #86b811;
- }
+.title {
+    margin: 5% 35%;
+    padding: 10px;
+    max-width: 400px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background: black;
+    color: #a5a524;
+    box-shadow: 0 0 10px 0 #75a719 inset, 0 0 10px 4px #86b811;
+}
 
- .btn {
-   font-family: 'Press Start 2P', cursive;
-   background: rgb(241, 241, 188);
-   border: 2px solid rgb(241, 241, 188);
-   padding: 6px 12px;
-   border-radius: 4px;
-   color:black;
-   cursor:pointer;
-   font-weight: bold;
- }
+.btn {
+    font-family: 'Press Start 2P', cursive;
+    background: rgb(241, 241, 188);
+    border: 2px solid rgb(241, 241, 188);
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
 
- .btn:hover {
-   background: linear-gradient(to top left, rgb(190, 190, 64), rgba(209, 209, 74, 0.9));
-   transition: all 0.3s;
-   box-shadow: 0 0 10px 0 #75a719 inset, 0 0 10px 4px #86b811;
+.btn:hover {
+    background: linear-gradient(to top left, rgb(190, 190, 64), rgba(209, 209, 74, 0.9));
+    transition: all 0.3s;
+    box-shadow: 0 0 10px 0 #75a719 inset, 0 0 10px 4px #86b811;
 }
 
 .card_grid {
-   margin-top: 40px;
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-gap: 20px;
-   padding: 20px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
 }
 
 .singleCard {
-   position:relative;
+    position: relative;
 }
- .singleCard img {
+
+.singleCard img {
     width: 100%;
     display: block;
-    border:2px solid rgb(190, 190, 64);
+    border: 2px solid rgb(190, 190, 64);
     border-radius: 6px;
- }
+}
 
- .singleCard .front {
+.singleCard .front {
     transform: rotateY(90deg);
     transition: all ease 0.5s;
     position: absolute;
- }
+}
 
- .flipped .front {
-   transform: rotateY(0deg);
-   transition-delay: 0.5s;
- }
+.flipped .front {
+    transform: rotateY(0deg);
+    transition-delay: 0.5s;
+}
 
- .singleCard .back {
+.singleCard .back {
     transition: all ease 0.5s;
     transition-delay: 0.5s;
- }
+}
 
- .flipped .back {
+.flipped .back {
     transform: rotateY(90deg);
     transition-delay: 0s;
- }
+}

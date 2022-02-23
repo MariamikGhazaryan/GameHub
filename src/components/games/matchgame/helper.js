@@ -6,15 +6,12 @@ import image5 from './match_img/emoji_5.png';
 import image6 from './match_img/emoji_6.png';
 
 
-
-
-
 export const cardImgs = [
-    {'src': image1, matched:false},
-    {'src': image2, matched:false},
-    {'src': image3, matched:false},
-    {'src': image4, matched:false},
-    {'src': image5, matched:false},
-    {'src': image6, matched:false}
+    {'src': image1, matched: false},
+    {'src': image2, matched: false},
+    {'src': image3, matched: false},
+    {'src': image4, matched: false},
+    {'src': image5, matched: false},
+    {'src': image6, matched: false}
 
 ]

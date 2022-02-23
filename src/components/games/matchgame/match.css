@@ -5,13 +5,13 @@
 /*   background: black;*/
 /*}*/
  .title {
+   margin: 5% 35%;
    padding: 10px;
    max-width: 400px;
    font-family: 'Press Start 2P', cursive;
-   margin: auto;
    text-align: center;
    background: black;
-   color: #a5a524; 
+   color: #a5a524;
    box-shadow: 0 0 10px 0 #75a719 inset, 0 0 10px 4px #86b811;
  }
 
@@ -60,7 +60,7 @@
    transform: rotateY(0deg);
    transition-delay: 0.5s;
  }
- 
+
  .singleCard .back {
     transition: all ease 0.5s;
     transition-delay: 0.5s;

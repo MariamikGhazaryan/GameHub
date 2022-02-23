@@ -1,14 +1,17 @@
 .registration-container {
-    padding: 15% 30% 10%;
-    background-color: black;
+    padding: 2% 5% 6%;
     font-family: sans-serif;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border: 1px solid #BFBFBF;
+    margin: 13% 29% 6% 26%;
+    box-shadow: 3px 4px 18px 3px#888888;
 
 }
 .registration-title {
     text-align: center;
-    color:white;
+    color: black;
     font-family: sans-serif;
-
 }
 
 input {
@@ -23,7 +26,7 @@ input {
 
 }
 
-.registerButton {
+button[type=submit] {
     background-color: royalblue;
     color: #fff;
     padding: 14px 20px;
@@ -33,11 +36,10 @@ input {
     cursor: pointer;
     float: right;
     font-family: sans-serif;
-
 }
 
-.loginButton {
-    background-color: whitesmoke;
+button[type=button] {
+    background-color: lightgray;
     color: black;
     padding: 14px 20px;
     margin: 8px 0;
@@ -46,7 +48,6 @@ input {
     cursor: pointer;
     float: left;
     font-family: sans-serif;
-
 }
 
 

@@ -49,6 +49,10 @@ export default function Registration() {
       });
   };
 
+  const navigateToLogin = (e) => {
+    navigate("../login");
+  }
+
   return (
     <div>
       <div className="registration-container">
@@ -86,10 +90,10 @@ export default function Registration() {
           {emailAlreadyExists === true && (
             <div className="warning">User with this email already exists.</div>
           )}
-          <button type="button" className="loginButton">
+          <button type="button"  onClick={navigateToLogin}>
             Login
           </button>
-          <button type="submit" className="registerButton">
+          <button type="submit">
             Register
           </button>
         </form>

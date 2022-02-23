@@ -1,11 +1,12 @@
-.container {
+.hangman-container {
     text-align: center;
     font-family: 'Courier New', monospace;
     padding: 25px;
+    margin: 2% 0;
     background-color: white;
 }
 
-h1 {
+.hangman {
     font-size: 56px;
     margin: 0;
     color: darkred;

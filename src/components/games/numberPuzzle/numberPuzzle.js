@@ -26,25 +26,27 @@ class NumberPuzzle extends React.Component {
 			>
 				<Row>
 					<Col>
-						<p>
+						<div>
 							<h1 className={'text-center'}> Organize </h1>
-						</p>
-						<p class='display'>
+						</div>
+						<div className='display'>
 							<Display label='Score' value={store.game.moviments} />
-						</p>
+						</div>
 					</Col>
 				</Row>
 
 				{store.grid.map((line, lineIndex) => {
 					return (
-						<Row>
+						<Row key={lineIndex}>
 							{line.map((colValue, colIndex) => {
 								return (
 									<Col
+										key={colIndex}
 										xs={12 / store.grid[0].length}
 										sm={12 / store.grid[0].length}
 									>
 										<Button
+											key={colIndex}
 											row={lineIndex}
 											col={colIndex}
 											isPlaying={store.game.playing}

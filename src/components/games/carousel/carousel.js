@@ -10,27 +10,27 @@ const Carousel = () => {
     const [currentImage, setCurrentImage] = useState(0);
 
     const goBack = () => {
-        currentImage > 0 && setCurrentImage (currentImage - 1)
+        currentImage > 0 ? setCurrentImage (currentImage - 1) : setCurrentImage (images.length - 1);
     }
 
     const goForward = () => {
-        currentImage < images.length - 1 && setCurrentImage (currentImage + 1)
+        currentImage < images.length - 1 ? setCurrentImage (currentImage + 1 ): setCurrentImage(0);
     }
     return (
         <div className='carousel'>
-            
+
              <div className="left" onClick={goBack}>
                  <ArrowBackIosIcon style={{fontSize: 30}} />
-                </div>   
+                </div>
              <div className="center">
              <div className="carouselInner"
                 style={{ backgroundImage: `url(${images[currentImage].img})` }}
             >
                 </div>
-                </div>   
+                </div>
              <div className="right" onClick={goForward}>
                  <ArrowForwardIosIcon style={{fontSize: 30}} />
-                 </div>   
+                 </div>
             
         </div>
     )

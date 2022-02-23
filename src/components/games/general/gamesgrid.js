@@ -1,6 +1,6 @@
 import React from "react";
 import './general.css';
-import { images } from '../../../helpers/carousel_images_array'
+import { images } from '../../../helpers/games_grid_images_array'
 import { useNavigate } from "react-router-dom";
 
 const GamesGrid= () => {

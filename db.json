@@ -1,6 +1,12 @@
 {
   "users": [
+    {
+      "email": "test@m",
+      "password": "$2a$10$cFBknv/IBba.0jNSZh0Yg.nJyh68ft65hWAgy5M1hWs.l6HMgF0fq",
+      "firstName": "test",
+      "lastName": "test",
+      "id": 1
+    }
   ],
-  "scores": [
-  ]
+  "scores": []
 }

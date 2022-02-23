@@ -1,5 +1,26 @@
 .news {
-    height: 85vh;
+    min-height: 85vh;
     background-color: darkgray;
     padding-top: 100px;
+}
+.info {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    margin-top: 20px;
+}
+.image {
+    width: 20%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text {
+    width: 80%;
+    margin: 0px 10px;
+}
+.text h2{
+    margin:0;
 }

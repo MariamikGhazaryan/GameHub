@@ -10,7 +10,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
  .left {
     flex: 10%;
@@ -33,6 +32,7 @@
     place-items: center;
     color:rgb(9, 11, 141);;
     cursor: pointer;
+}
 }
 
 .MuiSvgIcon-root{

@@ -29,11 +29,11 @@ const Games = () => {
         <NavLink className="navLink" to="hangman">
           Hangman
         </NavLink>
-        <NavLink className="navLink" to="sapper">
-          Sapper
-        </NavLink>
         <NavLink className="navLink" to="tetris">
           Tetris
+        </NavLink>
+        <NavLink className="navLink" to="sapper">
+          Sapper
         </NavLink>
         <NavLink className="navLink" to="number-puzzle">
           Number puzzle

@@ -63,7 +63,7 @@ function Board() {
 				<h3> Non-Mines - {nonMinecount} </h3>
 				{grid.map(( singlerow, index1)=>{
 					return (
-						<div className='board' key={index1}>
+						<div className='sapper_board' key={index1}>
 							{singlerow.map(( singlecol, index2 )=>{
 								return  <Cell details={singlecol} key = {index2} updateFlag = {updateFlag} revealcell = { revealcell }/>
 							})}

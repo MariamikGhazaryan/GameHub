@@ -1,4 +1,4 @@
-.board {
+.sapper_board {
     display: flex;
     flex-direction: row;
     width: fit-content;

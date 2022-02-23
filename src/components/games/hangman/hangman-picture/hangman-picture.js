@@ -7,20 +7,20 @@ import img5 from "../images/5.png";
 import img6 from "../images/6.png";
 
 import "./hangman-picture.css";
-import { useSelector } from "react-redux";
-import { hangManSelector } from "../../../../redux/selectors";
+import {useSelector} from "react-redux";
+import {hangManSelector} from "../../../../redux/selectors";
 
 export default function HangmanPicture() {
-  const { wrongLetters, guessedLetters } = useSelector(hangManSelector);
-  const pictures = [img0, img1, img2, img3, img4, img5, img6];
+    const {wrongLetters, guessedLetters} = useSelector(hangManSelector);
+    const pictures = [img0, img1, img2, img3, img4, img5, img6];
 
-  const isWin = () => guessedLetters.filter((item) => !item).length === 0;
+    const isWin = () => guessedLetters.filter((item) => !item).length === 0;
 
-  return (
-    <div>
-      {!isWin() && (
-        <img className="picture" src={pictures[wrongLetters.length]} />
-      )}
-    </div>
-  );
+    return (
+        <div>
+            {!isWin() && (
+                <img className="picture" src={pictures[wrongLetters.length]}/>
+            )}
+        </div>
+    );
 }

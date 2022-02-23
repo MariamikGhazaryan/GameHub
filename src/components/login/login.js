@@ -47,6 +47,10 @@ export default function Login() {
         }
       });
   };
+  
+  const navigateToRegistration = (e) => {
+    navigate("../registration");
+  }
 
   return (
     <div>
@@ -77,8 +81,8 @@ export default function Login() {
           {isAuthorized === false && (
             <div className="warning">Wrong email or password.</div>
           )}
-          <button type="button">Create account</button>
-          <button type="submit" className="loginButton">
+          <button type="button" onClick={navigateToRegistration}>Create account</button>
+          <button type="submit">
             Login
           </button>
         </form>

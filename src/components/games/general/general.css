@@ -25,5 +25,9 @@
 
 .image_item > span {
     font-family: 'Press Start 2P', cursive;
-    color:rgb(3, 3, 105);
+    color: lightcyan;
+}
+.image_item {
+    margin: 0 10px 0 5px;
+    cursor: pointer;
 }

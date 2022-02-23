@@ -7,9 +7,9 @@ import GamesGrid from './gamesgrid'
 const General = () => {
     return (
        <>
+        <Carousel />
         <GamesGrid />
         <LeaderBoard />
-        <Carousel />
         </>
     )
 }

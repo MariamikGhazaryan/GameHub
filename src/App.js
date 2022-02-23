@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import { lazy, Suspense } from "react";
 
 import Header from "./components/header/header";
@@ -25,6 +25,10 @@ function App() {
           <Route path="my-account" element={<MyAccount />} />
           <Route path="login" element={<Login />} />
           <Route path="registration" element={<Registration />} />
+          <Route
+            exact
+            path="/"
+            element = <Navigate to="/games" /> />
         </Routes>
       </Suspense>
       </div>

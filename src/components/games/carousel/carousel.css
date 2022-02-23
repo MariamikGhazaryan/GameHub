@@ -1,7 +1,8 @@
 .carousel {
     width:100%;
-    height: 450px;
     display: flex;
+    height: 310px;
+    margin: 45px 0;
 }
 .carouselInner {
     height: 100%;
@@ -9,12 +10,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-   
 }
  .left {
     flex: 10%;
     height: 100%;
-    background-color: rgb(32,138,168, 0.6);
+    background-color:black;
     display:grid;
     place-items: center;
     color:rgb(9, 11, 141);
@@ -27,10 +27,14 @@
  .right {
     flex: 10%;
     height: 100%;
-    background-color: rgb(32,138,168, 0.6);
+    background-color: black;
     display:grid;
     place-items: center;
     color:rgb(9, 11, 141);;
     cursor: pointer;
+}
+}
 
+.MuiSvgIcon-root{
+    color: wheat !important;
 }

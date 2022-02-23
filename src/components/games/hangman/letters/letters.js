@@ -66,7 +66,7 @@ export default function Letters() {
     <div>
       {letters.map((letter) => {
         return (
-          <button
+          <button className='letter'
             disabled={
               guessedLetters.includes(letter) || wrongLetters.includes(letter)
             }

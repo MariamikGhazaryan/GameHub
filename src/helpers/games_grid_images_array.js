@@ -7,10 +7,10 @@ import Tictac from "../components/games/general/games_grid_images/tictac.jpg"
 
 
 export const images = [
-	{ title: "Tetris", img: Tetris},
-	{ title: "Hangman", img: Hangman },
-	{ title: "Match Game", img: Match },
-	{ title: "Sapper", img: Sapper},
-	{ title: "Number Puzzle", img: Puzzle},
-	{ title: "Tic-Tac-Toe", img: Tictac}
+	{ title: "Tetris", img: Tetris, gameUrl: '../tetris' },
+	{ title: "Hangman", img: Hangman, gameUrl: '../hangman'  },
+	{ title: "Match Game", img: Match, gameUrl: '../match_game'  },
+	{ title: "Sapper", img: Sapper, gameUrl: '../sapper'  },
+	{ title: "Number Puzzle", img: Puzzle, gameUrl: '../number-puzzle'  },
+	{ title: "Tic-Tac-Toe", img: Tictac, gameUrl: '../tic-tac-toe'  }
 ]

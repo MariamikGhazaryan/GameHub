@@ -4,10 +4,12 @@ import { images } from "../../../helpers/carousel_images_array"
 import useState from "react-hook-use-state"
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
-
+import { useNavigate } from "react-router-dom";
 
 const Carousel = () => {
-    const [currentImage, setCurrentImage] = useState(0);
+  const navigate = useNavigate();
+
+  const [currentImage, setCurrentImage] = useState(0);
 
     const goBack = () => {
         currentImage > 0 ? setCurrentImage (currentImage - 1) : setCurrentImage (images.length - 1);
@@ -16,6 +18,11 @@ const Carousel = () => {
     const goForward = () => {
         currentImage < images.length - 1 ? setCurrentImage (currentImage + 1 ): setCurrentImage(0);
     }
+
+    const navigateToGame = () => {
+        navigate(images[currentImage].gameUrl);
+    }
+    
     return (
         <div className='carousel'>
 
@@ -23,7 +30,7 @@ const Carousel = () => {
                  <ArrowBackIosIcon style={{fontSize: 30}} />
                 </div>
              <div className="center">
-             <div className="carouselInner"
+             <div onClick={navigateToGame} className="carouselInner"
                 style={{ backgroundImage: `url(${images[currentImage].img})` }}
             >
                 </div>
@@ -31,7 +38,7 @@ const Carousel = () => {
              <div className="right" onClick={goForward}>
                  <ArrowForwardIosIcon style={{fontSize: 30}} />
                  </div>
-            
+
         </div>
     )
 }

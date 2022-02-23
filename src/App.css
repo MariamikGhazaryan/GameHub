@@ -6,3 +6,28 @@
 .content_wrap {
     flex:1;
 }
+
+
+.yes-button {
+    background-color: royalblue;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 35px 0 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+    font-family: sans-serif;
+}
+
+.no-button {
+    background-color: lightgray;
+    color: black;
+    padding: 14px 20px;
+    margin: 35px 0 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    font-family: sans-serif;
+}

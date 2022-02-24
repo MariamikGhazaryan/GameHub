@@ -1,10 +1,11 @@
-import { NavLink, Route, Routes } from 'react-router-dom';
-import React, { lazy, Suspense } from 'react';
+import { NavLink, Route, Routes } from "react-router-dom";
+import React, { lazy, Suspense } from "react";
 
-import './games.css';
-import { useSelector } from 'react-redux';
-import { userSelector } from '../../redux/selectors';
-import PleaseLogin from '../please-login/please-login';
+import "./games.css";
+import { useSelector } from "react-redux";
+import { userSelector } from "../../redux/selectors";
+import PleaseLogin from "../please-login/please-login";
+
 
 const Games = () => {
 	const { currentUser } = useSelector(userSelector);
@@ -64,7 +65,7 @@ const Games = () => {
 							element={currentUser ? <Tetris /> : <PleaseLogin />}
 						/>
 						<Route path='number-puzzle'
-									 element={currentUser ? <NumberPuzzle /> : <PleaseLogin />}
+                   element={currentUser ? <NumberPuzzle /> : <PleaseLogin />}
 						/>
 						<Route
 							path='game-2048'

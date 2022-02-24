@@ -38,8 +38,7 @@ const Carousel = () => {
             <div className="right" onClick={goForward}>
                 <ArrowForwardIosIcon style={{fontSize: 30}}/>
             </div>
-
         </div>
     )
 }
-export default Carousel
+export default Carousel;

@@ -14,7 +14,6 @@ function Board() {
     const [nonMinecount, setNonMinecount] = useState(0);
     const [mineLocation, setmineLocation] = useState([]);
 
-
     useEffect(() => {
 
         freshBoard();

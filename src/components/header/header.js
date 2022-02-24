@@ -4,8 +4,9 @@ import {useDispatch, useSelector} from "react-redux";
 import {userSelector} from "../../redux/selectors";
 import {changeCurrentUserAction} from "../../redux/ducks/UserDuck";
 import useState from "react-hook-use-state"
-import {Modal} from "./../modal/modal";
+import {Modal} from "../modal/modal";
 import "./../../App.css";
+import React from "react";
 
 const Header = () => {
     const {currentUser} = useSelector(userSelector);

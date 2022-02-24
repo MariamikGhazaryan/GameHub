@@ -2,8 +2,7 @@ import React from 'react';
 import './match.css';
 import coverPhoto from './match_img/coverPhoto.png';
 
-
-const SingleCard = ({card, handleChoice, flipped, disabled}) => {
+const SingleCard = ({card, handleChoice, flipped}) => {
     const handleClick = () => {
         handleChoice(card)
     }

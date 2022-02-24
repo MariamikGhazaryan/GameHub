@@ -5,7 +5,6 @@ import Sapper from "../components/games/carousel/carousel_images/sapper.jpg"
 import Puzzle from "../components/games/carousel/carousel_images/puzzle.jpg"
 import Tictac from "../components/games/carousel/carousel_images/tictac.jpg"
 
-
 export const images = [
     {title: "Tetris", img: Tetris, gameUrl: '../tetris'},
     {title: "Hangman", img: Hangman, gameUrl: '../hangman'},

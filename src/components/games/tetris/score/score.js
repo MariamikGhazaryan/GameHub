@@ -1,7 +1,7 @@
 import "./score.css";
 import {useDispatch, useSelector} from "react-redux";
 import {tetrisSelector} from "../../../../redux/selectors";
-import {useEffect} from "react";
+import React, {useEffect} from "react";
 import {scoreAction} from "../../../../redux/ducks/TetrisDuck";
 
 export default function Score() {

@@ -1,5 +1,6 @@
 import "./cell.css";
 import {Tetrominoes} from "../tetrominoes";
+import React from "react";
 
 export default function Cell({type}) {
     const color = Tetrominoes[type].color;

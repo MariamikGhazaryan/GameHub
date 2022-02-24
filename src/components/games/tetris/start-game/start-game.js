@@ -2,6 +2,7 @@ import "./start-game.css";
 import {updateAllAction} from "../../../../redux/ducks/TetrisDuck";
 import {createPlayGround, getRandomTetromino, WIDTH} from "../tetrominoes";
 import {useDispatch} from "react-redux";
+import React from "react";
 
 export default function StartGameButton() {
     const dispatch = useDispatch();

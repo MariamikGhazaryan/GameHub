@@ -1,7 +1,7 @@
 import "./registration.css";
 import {register} from "../../helpers/api";
 import {useNavigate} from "react-router-dom";
-import {useState} from "react";
+import React, {useState} from "react";
 
 export default function Registration() {
     const navigate = useNavigate();
@@ -49,7 +49,7 @@ export default function Registration() {
             });
     };
 
-    const navigateToLogin = (e) => {
+    const navigateToLogin = () => {
         navigate("../login");
     }
 

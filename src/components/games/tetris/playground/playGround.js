@@ -2,6 +2,7 @@ import Cell from "../cell/cell";
 import "./playGround.css";
 import {useSelector} from "react-redux";
 import {tetrisSelector} from "../../../../redux/selectors";
+import React from "react";
 
 export default function PlayGround() {
     const {playGround} = useSelector(tetrisSelector);

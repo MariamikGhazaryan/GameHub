@@ -1,4 +1,4 @@
-import {useEffect} from "react";
+import React, {useEffect} from "react";
 import "./hangman.css";
 import WordPlaceholder from "./word-placeholder/word-placeholder";
 import Letters from "./letters/letters";

@@ -2,6 +2,7 @@ import "./letters.css";
 import {useDispatch, useSelector} from "react-redux";
 import {hangManSelector} from "../../../../redux/selectors";
 import {guessedLettersAction, wrongLettersAction,} from "../../../../redux/ducks/HangManDuck";
+import React from "react";
 
 const letters = [
     "a",

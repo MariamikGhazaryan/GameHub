@@ -22,5 +22,5 @@ const GamesGrid = () => {
         </div>
     )
 }
-export default GamesGrid
+export default GamesGrid;
 

@@ -3,7 +3,7 @@ import "./game-over.css";
 import Restart from "../restart/restart";
 import {hangManSelector, userSelector} from "../../../../redux/selectors";
 import {addScore} from "../../../../helpers/api";
-import {useEffect} from 'react';
+import React, {useEffect} from 'react';
 
 export default function GameOver() {
     const {word} = useSelector(hangManSelector);

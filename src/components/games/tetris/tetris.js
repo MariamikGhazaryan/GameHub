@@ -14,7 +14,7 @@ import {
     updateAllAction,
 } from "../../../redux/ducks/TetrisDuck";
 import {createPlayGround, getRandomTetromino, isMoveInCorrect, WIDTH,} from "./tetrominoes";
-import {useEffect} from "react";
+import React, {useEffect} from "react";
 import {useInterval} from "./hooks/useInterval";
 import Level from "./level/level";
 import Score from "./score/score";

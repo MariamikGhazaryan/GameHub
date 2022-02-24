@@ -4,9 +4,9 @@ import {userSelector} from "../../redux/selectors";
 import {changeCurrentUserAction} from "../../redux/ducks/UserDuck";
 import {useNavigate} from "react-router-dom";
 import {deleteUser, getScoresByUserId} from "../../helpers/api";
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import "../../App.css";
-import {Modal} from "./../modal/modal";
+import {Modal} from "../modal/modal";
 
 const MyAccount = () => {
     const {currentUser} = useSelector(userSelector);

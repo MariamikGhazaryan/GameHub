@@ -9,7 +9,6 @@ export default function cell({details, updateFlag, revealcell}) {
         revealcell(details.x, details.y);
     }
 
-
     const rightClick = (e) => {
         updateFlag(e, details.x, details.y)
     }

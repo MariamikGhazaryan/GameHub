@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Board from './board';
 import {calculateWinner} from '../../../helpers/helper_tictacwinner'
 import './ticTacToe.css';
@@ -6,11 +6,9 @@ import {addScore} from "../../../helpers/api";
 import {useSelector} from "react-redux";
 import {userSelector} from "../../../redux/selectors";
 
-
 const TicTacToe = () => {
     const [board, setBoard] = useState(Array(9).fill(null));
     const [xIsNext, setXIsNext] = useState(true);
-    const [score, setScore] = useState(0);
     const winner = calculateWinner(board);
     const {currentUser} = useSelector(userSelector);
 

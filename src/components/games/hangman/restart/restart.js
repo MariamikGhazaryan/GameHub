@@ -3,6 +3,7 @@ import restartImg from "../images/restart.png";
 import {restartAction, wrongLettersAction,} from "../../../../redux/ducks/HangManDuck";
 import {useDispatch, useSelector} from "react-redux";
 import {hangManSelector} from "../../../../redux/selectors";
+import React from "react";
 
 export default function Restart() {
     const dispatch = useDispatch();
@@ -26,6 +27,7 @@ export default function Restart() {
             <img
                 className="restartImage"
                 src={restartImg}
+                alt="Restart"
                 onClick={handleRestartClick}
             />
         </div>

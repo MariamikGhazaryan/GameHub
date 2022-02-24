@@ -13,4 +13,4 @@ const General = () => {
         </>
     )
 }
-export default General
+export default General;

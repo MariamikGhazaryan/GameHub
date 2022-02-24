@@ -1,6 +1,6 @@
 import Square from './square';
 import './ticTacToe.css';
-
+import React from "react";
 
 const Board = ({squares, click}) => {
     return (
@@ -13,6 +13,5 @@ const Board = ({squares, click}) => {
         </div>
     )
 }
-
 
 export default Board;

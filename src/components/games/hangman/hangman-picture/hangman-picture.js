@@ -9,6 +9,7 @@ import img6 from "../images/6.png";
 import "./hangman-picture.css";
 import {useSelector} from "react-redux";
 import {hangManSelector} from "../../../../redux/selectors";
+import React from "react";
 
 export default function HangmanPicture() {
     const {wrongLetters, guessedLetters} = useSelector(hangManSelector);
@@ -19,7 +20,9 @@ export default function HangmanPicture() {
     return (
         <div>
             {!isWin() && (
-                <img className="picture" src={pictures[wrongLetters.length]}/>
+                <img className="picture"
+                     alt="Hangman"
+                     src={pictures[wrongLetters.length]}/>
             )}
         </div>
     );

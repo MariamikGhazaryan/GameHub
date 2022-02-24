@@ -1,7 +1,7 @@
 import "./win.css";
 import winner from "../images/winner.png";
 import Restart from "../restart/restart";
-import {useEffect} from 'react';
+import React, {useEffect} from 'react';
 import {useSelector} from "react-redux";
 import {hangManSelector, userSelector} from "../../../../redux/selectors";
 import {addScore} from "../../../../helpers/api";
@@ -21,7 +21,9 @@ export default function Win() {
 
     return (
         <div>
-            <img className="winnerImage" src={winner}/>
+            <img className="winnerImage"
+                 alt="winner"
+                 src={winner}/>
             <Restart/>
         </div>
     );

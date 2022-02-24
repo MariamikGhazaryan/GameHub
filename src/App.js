@@ -1,5 +1,5 @@
 import {Route, Routes, Navigate} from "react-router-dom";
-import {lazy, Suspense} from "react";
+import React, {lazy, Suspense} from "react";
 
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";

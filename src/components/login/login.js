@@ -1,7 +1,7 @@
 import {useDispatch} from "react-redux";
 import {login} from "../../helpers/api";
 import {useNavigate} from "react-router-dom";
-import {useState} from "react";
+import React, {useState} from "react";
 import {changeCurrentUserAction} from "../../redux/ducks/UserDuck";
 import './login.css';
 
@@ -48,7 +48,7 @@ export default function Login() {
             });
     };
 
-    const navigateToRegistration = (e) => {
+    const navigateToRegistration = () => {
         navigate("../registration");
     }
 

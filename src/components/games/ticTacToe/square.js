@@ -1,5 +1,5 @@
 import './ticTacToe.css';
-
+import React from "react";
 
 const Square = ({value, clickBtn}) => {
     return (
@@ -7,4 +7,4 @@ const Square = ({value, clickBtn}) => {
     )
 }
 
-export default Square
+export default Square;

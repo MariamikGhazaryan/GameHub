@@ -1,5 +1,6 @@
 import "./please-login.css";
 import {Modal} from "../modal/modal";
+import React from "react";
 
 export default function PleaseLogin() {
     return (

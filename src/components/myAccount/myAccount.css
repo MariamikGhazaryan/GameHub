@@ -17,12 +17,16 @@
 }
 
 .scoreItem {
+    /*height: 100%;*/
+    max-width: 170px;
     border: 1px solid lightgrey;
     border-radius: 5px;
     padding: 9px 12px;
     list-style-type: none;
     margin: 0 65px 5px;
     background-color: aliceblue;
+    text-align: start;
+    display: inline-list-item;
 }
 
 .userCard {
@@ -32,6 +36,7 @@
     margin: 20px 65px 5px;
     padding: 15px 40px;
     background-color: aliceblue;
+    border-radius: 10px;
 }
 
 .my-scores {

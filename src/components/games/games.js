@@ -54,8 +54,11 @@ const Games = () => {
             <Route
             path="hangman"
             element={currentUser ? <Hangman /> : <PleaseLogin />} />
-          <Route path="sapper" element={<Sapper />} />
-          <Route path="tetris"
+            <Route
+              path="sapper"
+              element={currentUser ? <Sapper /> : <PleaseLogin />}
+          />
+            <Route path="tetris"
             element={currentUser ? <Tetris /> : <PleaseLogin />}
           />
             <Route path="number-puzzle" element={<NumberPuzzle />} />

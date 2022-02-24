@@ -6,6 +6,13 @@
       "firstName": "test",
       "lastName": "test",
       "id": 1
+    },
+    {
+      "email": "areghovhannisyan93@gmail.com",
+      "password": "$2a$10$ZmfZDrVswk93DXb91600rOsCCWn6SYZvH0sS6j2IObDa2YHMkmAqm",
+      "firstName": "Areg",
+      "lastName": "Hovhannisyan",
+      "id": 2
     }
   ],
   "scores": []

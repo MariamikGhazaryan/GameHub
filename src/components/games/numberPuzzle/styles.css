@@ -1,10 +1,10 @@
-.game {
-  max-width: 300px;
+.puzzle-game {
+  max-width: 700px;
   margin-top: 20px;
   color: black;
   }
 
-.game h1 {
+.puzzle-game h1 {
   margin-top: 40px;
   margin-bottom: 40px;
   text-shadow: #111 1px 1px 4px;
@@ -12,17 +12,17 @@
 
 .badge {
   background-color: transparent;
-  color: black !important;
-  min-width: 50px;
+  color: #f6f5f5 !important;
+  min-width: 60px;
   text-align: right;
-  border: solid 1px #222;
-  box-shadow: inset #000 0 0 4px;
+  border: solid 1px #e8d9d9;
+  /*box-shadow: inset #e71818 0 0 4px;*/
   border-radius: 4px;
   margin-left: 5px;
   margin-right: 5px;
 }
 
-.game .btn {
+.puzzle-game .btn {
   min-width: 40px;
   min-height: 40px;
   margin: 5px;
@@ -47,12 +47,12 @@
   cursor: inherit;
 }
 
-.game .row {
+.puzzle-game .row {
   margin: 0;
   padding: 0;
 }
-.game .row div,
-.game .row button {
+.puzzle-game .row div,
+.puzzle-game .row button {
   margin: 0;
   padding: 2px;
 }
@@ -60,16 +60,18 @@
 .not-playing .btn-grid {
   border: none !important;
   box-shadow: none !important;
-  color: blue;
-  background-color: black;
+  color: whitesmoke;
+  background-color: #13e52e;
   opacity: 0.5;
   cursor: default;
 }
 
 .not-playing .btn-grid:active {
   background: darkred !important;
+  background: black;
 }
 
 .display {
+  color: whitesmoke;
   text-align: center;
 }

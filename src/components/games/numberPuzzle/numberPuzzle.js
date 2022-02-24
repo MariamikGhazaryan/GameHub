@@ -12,22 +12,19 @@ import {
 import './styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-class NumberPuzzle extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-
-	render() {
-		const { store } = this.props;
+const NumberPuzzle = (props) => {
+		const { store } = props;
 
 		return (
 			<Grid
-				className={'game' + (store.game.playing ? ' playing' : ' not-playing')}
+				className={
+					'puzzle-game' + (store.game.playing ? ' playing' : ' not-playing')
+				}
 			>
 				<Row>
 					<Col>
 						<div>
-							<h1 className={'text-center'}> Organize </h1>
+							<h1 className='text-center'> Organize </h1>
 						</div>
 						<div className='display'>
 							<Display label='Score' value={store.game.moviments} />
@@ -84,7 +81,6 @@ class NumberPuzzle extends React.Component {
 				})()}
 			</Grid>
 		);
-	}
 }
 
 function mapStateToProps(state) {

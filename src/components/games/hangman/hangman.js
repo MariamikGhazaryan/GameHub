@@ -24,7 +24,6 @@ export default function Hangman() {
     fetch("https://random-words-api.vercel.app/word")
       .then((res) => res.json())
       .then((resJson) => {
-        console.log(resJson.word)
         const randomWord = resJson[0].word.toLowerCase();
         dispatch(
           guessedLettersAction({
@@ -54,8 +53,6 @@ export default function Hangman() {
 
   const isGameOver = () => wrongLetters.length === 6;
   const isWin = () =>{
-    console.log(guessedLetters.length &&
-      guessedLetters.filter((item) => !item).length === 0)
     return guessedLetters.length &&
       guessedLetters.filter((item) => !item).length === 0
   }

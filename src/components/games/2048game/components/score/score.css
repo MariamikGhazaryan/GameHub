@@ -1,0 +1,8 @@
+.billing {
+    display: flex;
+    flex-direction: column;
+    height: 445px;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+}

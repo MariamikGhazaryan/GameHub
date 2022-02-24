@@ -13,7 +13,21 @@
       "firstName": "Areg",
       "lastName": "Hovhannisyan",
       "id": 2
-    }
+    },
+    {
+      "email": "narek.13.1993@gmail.com",
+      "password": "$2a$10$92tXRFNMRpYarmCscNqkuerqjPov.kZ1bZm//TXvOvNJ57YFnNUVm",
+      "firstName": "Narek",
+      "lastName": "Hovhannisyan",
+      "id": 2
+    },
+    {
+      "email": "test3@nfknk",
+      "password": "$2a$10$4O9.1oGYZaPIsdIDxtGvSuCDNHW9ItW7.rCveQzsZY0zpJn6cesGW",
+      "firstName": "test3",
+      "lastName": "test3",
+      "id": 3
+      }
   ],
   "scores": []
 }

@@ -2,17 +2,16 @@ import React from 'react';
 import Board from './sapper-game/board/board';
 import './sapper.css';
 
- const Sapper = () => (
+const Sapper = () => (
 
-	 <div className='sapper'>
-		 <div className="heading">
-			 <h1>MineSweeper</h1>
-		 </div>
-		 <div className="aligned">
-			 <Board/>
-		 </div>
-	 </div>
- )
-
+    <div className='sapper'>
+        <div className="heading">
+            <h1>MineSweeper</h1>
+        </div>
+        <div className="aligned">
+            <Board/>
+        </div>
+    </div>
+)
 
 export default Sapper;

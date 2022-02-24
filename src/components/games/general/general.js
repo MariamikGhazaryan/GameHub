@@ -6,11 +6,11 @@ import GamesGrid from './gamesgrid'
 
 const General = () => {
     return (
-       <>
-        <Carousel />
-        <GamesGrid />
-        <LeaderBoard />
+        <>
+            <Carousel/>
+            <GamesGrid/>
+            <LeaderBoard/>
         </>
     )
 }
-export default General
+export default General;

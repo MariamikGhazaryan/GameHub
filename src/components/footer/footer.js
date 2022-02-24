@@ -6,15 +6,13 @@ const Footer = () => {
 
     return (
         // <footer className='footer'>
-        <div className='footer'> 
+        <div className='footer'>
             <p>
-            &copy;{new Date().getFullYear()} GAME HUB INC | All right reserved | Terms of Service | Privacy  
+                &copy;{new Date().getFullYear()} GAME HUB INC | All right reserved | Terms of Service | Privacy
             </p>
-         </div> 
+        </div>
         // </footer>
     )
 }
 
-
-
-export default Footer
+export default Footer;

@@ -1,17 +1,17 @@
 import React from 'react'
 import './cell.css'
-export default function cell({ details, updateFlag, revealcell }) {
 
-	const click=()=>{
-		if(details.value === 'X'){
-		}
-		revealcell(details.x,details.y);
-	}
+export default function cell({details, updateFlag, revealcell}) {
 
+    const click = () => {
+        if (details.value === 'X') {
+        }
+        revealcell(details.x, details.y);
+    }
 
-	const rightClick = (e) => {
-		updateFlag(e, details.x, details.y)
-	}
+    const rightClick = (e) => {
+        updateFlag(e, details.x, details.y)
+    }
 
 	return (
 		<div className = 'call' onClick = {click} onContextMenu = {rightClick} style={

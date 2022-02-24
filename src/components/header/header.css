@@ -22,6 +22,7 @@
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
 }
+
 .header button {
     margin: 20px;
     border-radius: 5px;
@@ -34,6 +35,7 @@
     transition: all 150ms ease-in-out;
     cursor: pointer;
 }
+
 .header .active {
     color: #000;
     background: linear-gradient(to top left, rgba(10, 90, 134, 0.99), rgba(250, 251, 252, 0.9));

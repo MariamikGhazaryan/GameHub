@@ -18,7 +18,7 @@
     text-decoration: none;
     padding: 10px;
     border-color: #f5f5f5;
-    color: #fff;
+    color: #fff !important;
     background: linear-gradient(90deg, rgb(107, 102, 178) 0%, rgb(45, 45, 218) 35%, rgb(15, 93, 108) 100%);
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
@@ -30,11 +30,12 @@
     text-decoration: none;
     padding: 13px 17px 10px;
     border: none;
-    color: #fff;
-    box-shadow: 0 0 40px 40px rgba(32, 138, 168, 0.99) inset, 0 0 0 0 #0549ea;
+    color: #fff !important;
+    background: linear-gradient(90deg, rgb(107, 102, 178) 0%, rgb(45, 45, 218) 35%, rgb(15, 93, 108) 100%);
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .header .active {

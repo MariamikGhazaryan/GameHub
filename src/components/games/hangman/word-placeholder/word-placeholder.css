@@ -15,9 +15,9 @@ li {
 }
 
 .not-visible {
-    visibility: hidden;
+    color: white;
 }
 
 .visible {
-    visibility: visible;
+   color: #0a0a01;
 }

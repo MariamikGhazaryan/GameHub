@@ -56,7 +56,7 @@ button[type=button] {
     font-family: sans-serif;
 }
 
-span {
+.login-label {
     color: #ffffff;
     font-family: sans-serif;
 }

@@ -2,9 +2,9 @@ import React, {useEffect, useState} from 'react';
 import Board from './board';
 import {calculateWinner} from '../../../helpers/helper_tictacwinner'
 import './ticTacToe.css';
-import {addScore} from "../../../helpers/api";
 import {useSelector} from "react-redux";
 import {userSelector} from "../../../redux/selectors";
+import {addGameScore} from "../../../helpers/helper";
 
 const TicTacToe = () => {
     const [board, setBoard] = useState(Array(9).fill(null));
@@ -14,12 +14,7 @@ const TicTacToe = () => {
 
     useEffect(() => {
         if (winner) {
-            const body = {
-                userId: currentUser.id,
-                game: 'Tic-Tac-Toe',
-                score: 1
-            };
-            addScore(`scores`, body).then();
+            addGameScore(currentUser.id, 'Tic-Tac-Toe', 1);
         }
 
     }, [winner]);
@@ -36,12 +31,7 @@ const TicTacToe = () => {
     ;
     const reStart = () => {
         if(!board.filter(item => !item).length && !winner) {
-            const body = {
-                userId: currentUser.id,
-                game: 'Tic-Tac-Toe',
-                score: 0
-            };
-            addScore(`scores`, body).then();
+            addGameScore(currentUser.id, 'Tic-Tac-Toe', 0);
         }
         setBoard(Array(9).fill(null))
     };

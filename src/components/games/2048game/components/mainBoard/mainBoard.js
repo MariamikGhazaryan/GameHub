@@ -272,7 +272,7 @@ export default class Game2048 extends Component {
 			.map((tile) => <TileView tile={tile} key={tile.id} />);
 		return (
 			<div className='box'>
-				<button className='buttonScore'>Score {this.state.board.score}</button>
+				<h1 className='header-2048'>2048</h1>
 				<div
 					className='billing'
 					onTouchStart={this.handleTouchStart.bind(this)}
@@ -281,6 +281,8 @@ export default class Game2048 extends Component {
 				>
 					{cells}
 					{tiles}
+					<button className='buttonScore'>Score {this.state.board.score}</button>
+
 					<EndGame
 						board={this.state.board}
 						onRestart={this.restartGame.bind(this)}

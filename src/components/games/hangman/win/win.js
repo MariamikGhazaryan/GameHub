@@ -4,19 +4,14 @@ import Restart from "../restart/restart";
 import React, {useEffect} from 'react';
 import {useSelector} from "react-redux";
 import {hangManSelector, userSelector} from "../../../../redux/selectors";
-import {addScore} from "../../../../helpers/api";
+import {addGameScore} from "../../../../helpers/helper";
 
 export default function Win() {
     const {guessedLetters} = useSelector(hangManSelector);
     const {currentUser} = useSelector(userSelector);
 
     useEffect(() => {
-        const body = {
-            userId: currentUser.id,
-            game: 'HangMan',
-            score: guessedLetters.filter((item) => item).length
-        }
-        addScore(`scores`, body).then()
+        addGameScore(currentUser.id, 'HangMan', guessedLetters.filter((item) => item).length);
     }, []);
 
     return (

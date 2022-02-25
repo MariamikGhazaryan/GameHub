@@ -2,9 +2,9 @@ import React, {useEffect, useState} from 'react';
 import {cardImgs} from './helper';
 import './match.css';
 import SingleCard from './singleCard';
-import {addScore} from "../../../helpers/api";
 import {useSelector} from "react-redux";
 import {userSelector} from "../../../redux/selectors";
+import {addGameScore} from "../../../helpers/helper";
 
 const MatchGame = () => {
     const {currentUser} = useSelector(userSelector);
@@ -16,12 +16,7 @@ const MatchGame = () => {
 
     const shuffleCards = () => {
         if (turns) {
-            const body = {
-                userId: currentUser.id,
-                game: 'Memory Game',
-                score: score
-            };
-            addScore(`scores`, body).then();
+            addGameScore(currentUser.id, 'Memory Game', score);
         }
         const shuffledCards = [...cardImgs, ...cardImgs]
             .sort(() => Math.random() - 0.5)

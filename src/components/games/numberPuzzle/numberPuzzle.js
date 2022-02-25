@@ -21,7 +21,7 @@ const NumberPuzzle = (props) => {
 				<Row>
 					<Col>
 						<div>
-							<h1 className='text-center'> Organize </h1>
+							<h1 className='number-puzzle-header'> Organize </h1>
 						</div>
 						<div className='display'>
 							<Display label='Score' value={store.game.moviments} />

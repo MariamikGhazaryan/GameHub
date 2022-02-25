@@ -4,8 +4,6 @@ import './cell.css'
 export default function cell({details, updateFlag, revealcell}) {
 
     const click = () => {
-        if (details.value === 'X') {
-        }
         revealcell(details.x, details.y);
     }
 

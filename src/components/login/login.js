@@ -57,7 +57,7 @@ export default function Login() {
             <div className="login-container">
                 <h2 className="login-title">Login</h2>
                 <form onSubmit={handleLoginButton}>
-          <span>
+          <span className='login-label'>
             <b>E-mail</b>
           </span>
                     <input
@@ -68,7 +68,7 @@ export default function Login() {
                         required
                     />
 
-                    <span>
+                    <span className='login-label'>
             <b>Password</b>
           </span>
                     <input

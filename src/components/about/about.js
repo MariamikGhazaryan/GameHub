@@ -6,6 +6,7 @@ import Puzzle from './info_image/number_puzzle.jpg'
 import Hangman from './info_image/hangman.jpg'
 import Sapper from './info_image/sapper.jpg'
 import Tetris from './info_image/tetris.jpg'
+import Game2048 from './info_image/games2048.jpg'
 
 
 const About = () => {
@@ -111,6 +112,21 @@ const About = () => {
                         everyone, everywhere!
                     </p>
                 </div>
+            </div>
+
+            <div className='info'>
+                <div className="text">
+                    <h2> 2048 </h2>
+                    <p>2048 is a single-player sliding tile puzzle video game written by Italian web developer
+                        Gabriele Cirulli and published on GitHub. The objective of the game is to slide numbered tiles
+                        on a grid to combine them to create a tile with the number 2048; however, one can
+                        continue to play the game after reaching the goal, creating tiles with larger numbers.
+                        It was originally written in JavaScript and CSS over a weekend, and released on 9 March 2014
+                        as free and open-source software subject to the MIT License.
+                        Versions for iOS and Android followed in May 2014.
+                    </p>
+                </div>
+                <div className='image' style={{backgroundImage: `url(${Game2048})`}}/>
             </div>
         </div>
     )

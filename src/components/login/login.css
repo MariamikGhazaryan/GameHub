@@ -2,7 +2,7 @@
     padding: 2% 5% 6%;
     font-family: sans-serif;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background: linear-gradient(90deg, rgb(8, 5, 59) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     border: 1px solid #BFBFBF;
     margin: 13% 29% 6% 26%;
     box-shadow: 3px 4px 18px 3px #888888;
@@ -10,7 +10,7 @@
 
 .login-title {
     text-align: center;
-    color: black;
+    color: #ffffff;
     font-family: sans-serif;
 }
 
@@ -26,7 +26,7 @@ input {
 }
 
 button[type=submit] {
-    background-color: royalblue;
+    background: linear-gradient(90deg, rgb(107, 102, 178) 0%, rgb(45, 45, 218) 35%, rgb(15, 93, 108) 100%);
     color: #fff;
     padding: 14px 20px;
     margin: 8px 0;
@@ -35,11 +35,12 @@ button[type=submit] {
     cursor: pointer;
     float: right;
     font-family: sans-serif;
+    box-shadow: 1px 2px 10px 2px #e1e1de;
 }
 
 button[type=button] {
-    background-color: lightgray;
-    color: black;
+    background: linear-gradient(90deg, rgb(29, 24, 129) 0%, rgb(45, 45, 218) 35%, rgb(15, 93, 108) 100%);
+    color: #e1e1de;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -47,6 +48,7 @@ button[type=button] {
     cursor: pointer;
     float: left;
     font-family: sans-serif;
+    box-shadow: 1px 2px 10px 2px #e1e1de;
 }
 
 .warning {
@@ -55,6 +57,6 @@ button[type=button] {
 }
 
 span {
-    color: black;
+    color: #ffffff;
     font-family: sans-serif;
 }

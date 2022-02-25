@@ -8,13 +8,6 @@
       "id": 1
     },
     {
-      "email": "areghovhannisyan93@gmail.com",
-      "password": "$2a$10$ZmfZDrVswk93DXb91600rOsCCWn6SYZvH0sS6j2IObDa2YHMkmAqm",
-      "firstName": "Areg",
-      "lastName": "Hovhannisyan",
-      "id": 2
-    },
-    {
       "email": "narek.13.1993@gmail.com",
       "password": "$2a$10$92tXRFNMRpYarmCscNqkuerqjPov.kZ1bZm//TXvOvNJ57YFnNUVm",
       "firstName": "Narek",
@@ -27,7 +20,21 @@
       "firstName": "test3",
       "lastName": "test3",
       "id": 3
-      }
+    },
+    {
+      "email": "areghovhannisya@gmail.com",
+      "password": "$2a$10$mCbbfJZt6tFtrLWuIh3wd.MOxoqs1xLyLEh7aN9LdRmnO4/hLEiMa",
+      "firstName": "areg",
+      "lastName": "areg",
+      "id": 4
+    }
   ],
-  "scores": []
+  "scores": [
+    {
+      "userId": 4,
+      "game": "HangMan",
+      "score": 2,
+      "id": 1
+    }
+  ]
 }

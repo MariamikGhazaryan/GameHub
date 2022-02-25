@@ -20,21 +20,7 @@
       "firstName": "test3",
       "lastName": "test3",
       "id": 3
-    },
-    {
-      "email": "areghovhannisya@gmail.com",
-      "password": "$2a$10$mCbbfJZt6tFtrLWuIh3wd.MOxoqs1xLyLEh7aN9LdRmnO4/hLEiMa",
-      "firstName": "areg",
-      "lastName": "areg",
-      "id": 4
     }
   ],
-  "scores": [
-    {
-      "userId": 4,
-      "game": "HangMan",
-      "score": 2,
-      "id": 1
-    }
-  ]
+  "scores": []
 }

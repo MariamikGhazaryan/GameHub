@@ -5,7 +5,7 @@
 
 a {
     padding: 17px;
-    color: black;
+    color: black !important;
     font-weight: bold;
 }
 

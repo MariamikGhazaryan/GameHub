@@ -531,8 +531,11 @@
     background-color: #b6bad2;
     border-radius: 10px;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 34px 174px;
     color: #0a0a01;
     font-size: 17px;
-
+}
+.header-2048 {
+    color: orangered;
+    margin: 17px;
 }

@@ -5,9 +5,9 @@
     color: rgba(45, 166, 252, 0.99);
 }
 
-h3 {
+.score-sapper {
     color: #009879;
     text-align: center;
     font-size: 30px;
-    margin: 0;
+    margin: 17px;
 }

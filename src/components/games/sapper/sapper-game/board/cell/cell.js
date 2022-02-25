@@ -4,6 +4,7 @@ import './cell.css'
 export default function cell({details, updateFlag, revealcell}) {
 
     const click = () => {
+			// eslint-disable-next-line no-empty
         if (details.value === 'X') {
         }
         revealcell(details.x, details.y);

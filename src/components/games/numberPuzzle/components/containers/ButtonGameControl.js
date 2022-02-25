@@ -3,6 +3,7 @@ import {connect} from "react-redux";
 import {PLAY, RESET} from "../../actions/actions.js";
 
 const create_button = (act, label) => {
+  // eslint-disable-next-line react/display-name
     return ({dispatch}) => {
         return (
             <button

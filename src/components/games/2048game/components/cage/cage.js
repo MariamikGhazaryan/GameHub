@@ -1,11 +1,9 @@
 import {memo} from 'react';
 import './cage.css';
 
-const Cell = memo(() => {
-	// shouldComponentUpdate() {
-	// 	return false;
-	// }
+const Cell = (() => {
+	// eslint-disable-next-line react/react-in-jsx-scope
 	return <span className='cage'/>
 })
 
-export default Cell;
+export default memo(Cell);

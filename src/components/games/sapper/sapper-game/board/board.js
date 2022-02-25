@@ -57,8 +57,6 @@ function Board() {
     return (
         <div className="parent">
             <div>
-                <h3> score - {NO_MINES_CELLS_QUANTITY - nonMinecount} </h3>
-                <h3> Non-Mines - {nonMinecount} </h3>
                 {grid.map((singlerow, index1) => {
                     return (
                         <div className='sapper_board' key={index1}>
@@ -69,6 +67,8 @@ function Board() {
                         </div>
                     )
                 })}
+                <h3 className='score-sapper'> Score - {NO_MINES_CELLS_QUANTITY - nonMinecount} </h3>
+                <h3 className='score-sapper'> Non-Mines - {nonMinecount} </h3>
             </div>
         </div>
     )

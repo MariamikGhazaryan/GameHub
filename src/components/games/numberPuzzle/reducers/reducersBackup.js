@@ -32,7 +32,6 @@ function array_shuffle(arg) {
             grid[x][y] = value;
         }
     }
-
     return grid;
 }
 

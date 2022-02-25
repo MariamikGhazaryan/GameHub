@@ -29,7 +29,7 @@
     text-shadow: 1px 1px rgb(154, 255, 255);
 }
 
-h1 {
+.sapper-title {
     font-size: 45px;
-    margin: 5px;
+    margin: 17px;
 }

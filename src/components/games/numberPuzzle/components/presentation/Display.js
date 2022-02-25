@@ -5,7 +5,7 @@ import {Badge} from "react-bootstrap";
 const Display = props => {
     return (
         <strong>
-            <span>{props.label}</span>
+            <span className="display-title">{props.label}</span>
             <Badge>{props.value}</Badge>
         </strong>
     );

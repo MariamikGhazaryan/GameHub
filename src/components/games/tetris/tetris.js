@@ -224,7 +224,7 @@ export default function Tetris() {
 
     return (
         <div>
-            <h1>Tetris</h1>
+            <h1 className="tetris-header">Tetris</h1>
             <div
                 className="container-tetris"
                 role="button"

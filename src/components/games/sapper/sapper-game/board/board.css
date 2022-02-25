@@ -5,9 +5,10 @@
     color: rgba(45, 166, 252, 0.99);
 }
 
-h3 {
-    color: black;
+.score-sapper {
+    color: white;
     text-align: center;
     font-size: 30px;
-    margin: 0;
+    margin: 17px;
 }
+

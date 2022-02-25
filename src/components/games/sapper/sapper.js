@@ -6,7 +6,7 @@ const Sapper = () => (
 
     <div className='sapper'>
         <div className="heading">
-            <h1>MineSweeper</h1>
+            <h1 className="sapper-title">MineSweeper</h1>
         </div>
         <div className="aligned">
             <Board/>

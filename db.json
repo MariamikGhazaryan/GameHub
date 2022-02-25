@@ -1,13 +1,6 @@
 {
   "users": [
     {
-      "email": "test@m",
-      "password": "$2a$10$cFBknv/IBba.0jNSZh0Yg.nJyh68ft65hWAgy5M1hWs.l6HMgF0fq",
-      "firstName": "test",
-      "lastName": "test",
-      "id": 1
-    },
-    {
       "email": "narek.13.1993@gmail.com",
       "password": "$2a$10$92tXRFNMRpYarmCscNqkuerqjPov.kZ1bZm//TXvOvNJ57YFnNUVm",
       "firstName": "Narek",
@@ -15,12 +8,37 @@
       "id": 2
     },
     {
-      "email": "test3@nfknk",
-      "password": "$2a$10$4O9.1oGYZaPIsdIDxtGvSuCDNHW9ItW7.rCveQzsZY0zpJn6cesGW",
-      "firstName": "test3",
-      "lastName": "test3",
-      "id": 3
+      "email": "mariam@mail.ru",
+      "password": "$2a$10$cKsJEOI6BMWQUdmWbPETT.qRYvYo3FvA4dblRhV9ewR2CWuOyoO.m",
+      "firstName": "Mariam",
+      "lastName": "Ghazaryan",
+      "id": 4
     }
   ],
-  "scores": []
+  "scores": [
+    {
+      "userId": 2,
+      "game": "HangMan",
+      "score": 0,
+      "id": 1
+    },
+    {
+      "userId": 4,
+      "game": "HangMan",
+      "score": 4,
+      "id": 2
+    },
+    {
+      "userId": 4,
+      "game": "Tetris",
+      "score": 0,
+      "id": 3
+    },
+    {
+      "userId": 4,
+      "game": "Tic-Tac-Toe",
+      "score": 1,
+      "id": 4
+    }
+  ]
 }

@@ -20,45 +20,7 @@
       "firstName": "test3",
       "lastName": "test3",
       "id": 3
-    },
-    {
-      "email": "mariam@mail.ru",
-      "password": "$2a$10$cKsJEOI6BMWQUdmWbPETT.qRYvYo3FvA4dblRhV9ewR2CWuOyoO.m",
-      "firstName": "Mariam",
-      "lastName": "Ghazaryan",
-      "id": 4
     }
   ],
-  "scores": [
-    {
-      "userId": 2,
-      "game": "HangMan",
-      "score": 0,
-      "id": 1
-    },
-    {
-      "userId": 4,
-      "game": "HangMan",
-      "score": 4,
-      "id": 2
-    },
-    {
-      "userId": 4,
-      "game": "Tetris",
-      "score": 0,
-      "id": 3
-    },
-    {
-      "userId": 4,
-      "game": "Tic-Tac-Toe",
-      "score": 1,
-      "id": 4
-    },
-    {
-      "userId": 4,
-      "game": "HangMan",
-      "score": 1,
-      "id": 5
-    }
-  ]
+  "scores": []
 }

@@ -13,27 +13,25 @@ export default function cell({details, updateFlag, revealcell}) {
         updateFlag(e, details.x, details.y)
     }
 
-    return (
-        <div className='call' onClick={click} onContextMenu={rightClick} style={
-            {
-                backgroundColor: details.revealed && details.value !== 0 ? details.value === 'X'
-                    ? 'rgb(234,8,8)' : 'rgba(11,80,232,0.99)'
-                    : details.revealed && details.value === 0
-                        ? 'rgb(60,252,2)'
-                        : 'rgb(0,0,11)'
-            }
-        }>
-            {!details.revealed && details.flagged ? (
-                "🚩"
-            ) : details.revealed && details.value !== 0 ? (
-                details.value === "X" ? (
-                    "💣"
-                ) : (
-                    details.value
-                )
-            ) : (
-                ""
-            )}
-        </div>
-    )
+	return (
+		<div className = 'call' onClick = {click} onContextMenu = {rightClick} style={
+			{ backgroundColor: details.revealed && details.value!==0 ? details.value === 'X'
+					? 'rgb(183,7,7)' : 'rgba(7,62,190,0.99)'
+					: details.revealed&&details.value === 0
+						? 'rgb(45,176,8)'
+						: '#009879' }
+		}>
+			{!details.revealed && details.flagged ? (
+				"🚩"
+			) : details.revealed && details.value !== 0 ? (
+				details.value === "X" ? (
+					"💣"
+				) : (
+					details.value
+				)
+			) : (
+				""
+			)}
+		</div>
+	)
 }

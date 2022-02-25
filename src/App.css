@@ -10,7 +10,7 @@
 
 
 .yes-button {
-    background-color: royalblue;
+    background: linear-gradient(90deg, rgb(107, 102, 178) 0%, rgb(45, 45, 218) 35%, rgb(15, 93, 108) 100%);
     color: #fff;
     padding: 14px 20px;
     margin: 35px 0 8px 0;
@@ -19,11 +19,12 @@
     cursor: pointer;
     float: left;
     font-family: sans-serif;
+    box-shadow: 1px 2px 10px 2px #e1e1de;
 }
 
 .no-button {
-    background-color: lightgray;
-    color: black;
+    background: linear-gradient(90deg, rgb(107, 102, 178) 0%, rgb(45, 45, 218) 35%, rgb(15, 93, 108) 100%);
+    color: #fffffe;
     padding: 14px 20px;
     margin: 35px 0 8px 0;
     border: none;
@@ -31,4 +32,5 @@
     cursor: pointer;
     float: right;
     font-family: sans-serif;
+    box-shadow: 1px 2px 10px 2px #e1e1de;
 }

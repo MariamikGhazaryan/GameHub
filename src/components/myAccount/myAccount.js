@@ -42,15 +42,15 @@ const MyAccount = () => {
         setShowModal(false);
     };
 
-    return (
-        <div className="myAccount">
-            <div className="userCard">
-                <div>FirstName : {currentUser.firstName}</div>
-                <br/>
-                <div>LastName : {currentUser.lastName}</div>
-            </div>
-            <h2 className="my-scores"> My Scores</h2>
-            <div>{scores.map(item => <div className="scoreItem" key={item.id}>{item.game} : {item.score}</div>)}</div>
+  return (
+    <div className="myAccount">
+      <div className="userCard">
+        <div>FirstName : {currentUser.firstName}</div>
+        <br/>
+        <div>LastName : {currentUser.lastName}</div>
+      </div>
+      <h2 className="my-scores"> My Scores</h2>
+      <div>{scores.map(item => <div className="scoreItem" key={item.id}>{item.game} - {item.score}</div>)}</div>
 
             <button className="deleteAccountButton" onClick={handleDeleteAccount}>Delete account</button>
             <Modal show={showModal}>

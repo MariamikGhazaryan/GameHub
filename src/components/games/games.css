@@ -5,6 +5,7 @@
 
 a {
     padding: 17px;
-    color: white !important;
+    color: black !important;
+    font-weight: bold;
 }
 

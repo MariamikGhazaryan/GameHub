@@ -1,11 +1,25 @@
 {
   "users": [
     {
+      "email": "test@m",
+      "password": "$2a$10$cFBknv/IBba.0jNSZh0Yg.nJyh68ft65hWAgy5M1hWs.l6HMgF0fq",
+      "firstName": "test",
+      "lastName": "test",
+      "id": 1
+    },
+    {
       "email": "narek.13.1993@gmail.com",
       "password": "$2a$10$92tXRFNMRpYarmCscNqkuerqjPov.kZ1bZm//TXvOvNJ57YFnNUVm",
       "firstName": "Narek",
       "lastName": "Hovhannisyan",
       "id": 2
+    },
+    {
+      "email": "test3@nfknk",
+      "password": "$2a$10$4O9.1oGYZaPIsdIDxtGvSuCDNHW9ItW7.rCveQzsZY0zpJn6cesGW",
+      "firstName": "test3",
+      "lastName": "test3",
+      "id": 3
     },
     {
       "email": "mariam@mail.ru",
@@ -39,6 +53,12 @@
       "game": "Tic-Tac-Toe",
       "score": 1,
       "id": 4
+    },
+    {
+      "userId": 4,
+      "game": "HangMan",
+      "score": 1,
+      "id": 5
     }
   ]
 }

@@ -5,6 +5,7 @@ import {PLAY, RESET} from "../../actions/actions.js";
 const create_button = (act, label) => {
   // eslint-disable-next-line react/display-name
     return ({dispatch}) => {
+        // eslint-disable-next-line react/display-name
         return (
             <button
                 className="btn"

@@ -3,6 +3,9 @@ import CreateBoard from '../../utils/createBoard';
 import {revealed} from "../../utils/reveal";
 import Cell from './cell/cell';
 import './board.css';
+import {userSelector} from '../../../../../redux/selectors';
+import {useSelector} from "react-redux";
+import {addGameScore} from '../../../../../helpers/helper';
 
 const ROW = 10;
 const COlUMN = 10;
@@ -13,6 +16,7 @@ function Board() {
     const [grid, setGrid] = useState([]);
     const [nonMinecount, setNonMinecount] = useState(0);
     const [mineLocation, setmineLocation] = useState([]);
+    const { currentUser } = useSelector(userSelector)
 
     useEffect(() => {
 
@@ -43,15 +47,17 @@ function Board() {
             }
             setGrid(newGrid);
             setTimeout(newfresh, 2000);
+            let revealedBoard = revealed(newGrid, x, y, nonMinecount);
+            const score = NO_MINES_CELLS_QUANTITY - revealedBoard.newNonMines
+            addGameScore(currentUser.id, "Sapper", score);
         }
         if (nonMinecount === 0) {
             setTimeout(newfresh, 2000);
         } else {
-            let revealedboard = revealed(newGrid, x, y, nonMinecount);
-            setGrid(revealedboard.arr);
-            setNonMinecount(revealedboard.newNonMines);
+            let revealedBoard = revealed(newGrid, x, y, nonMinecount);
+            setGrid(revealedBoard.arr);
+            setNonMinecount(revealedBoard.newNonMines);
         }
-
     }
 
     return (

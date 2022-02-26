@@ -1,110 +1,99 @@
 {
   "users": [
     {
-      "email": "test@m",
-      "password": "$2a$10$cFBknv/IBba.0jNSZh0Yg.nJyh68ft65hWAgy5M1hWs.l6HMgF0fq",
-      "firstName": "test",
-      "lastName": "test",
+      "email": "mariam@gmail.com",
+      "password": "$2a$10$Q3qi.Z58aCLt72kWQ6ppq.dIAyPSURj/2mu6VIGLtG3OF.52fp00u",
+      "firstName": "Mariam",
+      "lastName": "Ghazaryan",
       "id": 1
     },
     {
-      "email": "narek.13.1993@gmail.com",
-      "password": "$2a$10$92tXRFNMRpYarmCscNqkuerqjPov.kZ1bZm//TXvOvNJ57YFnNUVm",
-      "firstName": "Narek",
-      "lastName": "Hovhannisyan",
+      "email": "ani.asryan@mail.ru",
+      "password": "$2a$10$FoZGb3EcXm0mpMh8IYmpfeDBw9PLCsS7e9sAUEnuxml2s7WoCqvFy",
+      "firstName": "Ani",
+      "lastName": "Asryan",
       "id": 2
     },
     {
-      "email": "test3@nfknk",
-      "password": "$2a$10$4O9.1oGYZaPIsdIDxtGvSuCDNHW9ItW7.rCveQzsZY0zpJn6cesGW",
-      "firstName": "test3",
-      "lastName": "test3",
+      "email": "areghovhannisya@gmail.com",
+      "password": "$2a$10$jZryyxjfqhpwsnd2pnxZbOfkfRnsJILF6efjigNZWbHwPhBxbRnSy",
+      "firstName": "Areg ",
+      "lastName": "Hovhannisyan",
       "id": 3
     },
     {
-      "email": "mariam@mail.ru",
-      "password": "$2a$10$cKsJEOI6BMWQUdmWbPETT.qRYvYo3FvA4dblRhV9ewR2CWuOyoO.m",
-      "firstName": "Mariam",
-      "lastName": "Ghazaryan",
+      "email": "narek.13.1993@gmail.com",
+      "password": "$2a$10$KeRau/.WdRo8hRFQWc5T4un7F7dHaNxiOH/h3OzpDy9VBAjYGVsAq",
+      "firstName": "Narek",
+      "lastName": "Hovhannisyan",
       "id": 4
     }
   ],
   "scores": [
     {
-      "userId": 2,
-      "game": "HangMan",
-      "score": 0,
+      "userId": 1,
+      "game": "Tetris",
+      "score": 4,
       "id": 1
     },
     {
-      "userId": 4,
+      "userId": 3,
       "game": "HangMan",
-      "score": 4,
+      "score": 1,
       "id": 2
     },
     {
-      "userId": 4,
-      "game": "Tetris",
-      "score": 0,
+      "userId": 1,
+      "game": "HangMan",
+      "score": 6,
       "id": 3
     },
     {
-      "userId": 4,
+      "userId": 3,
       "game": "Tic-Tac-Toe",
-      "score": 1,
-      "id": 4
-    },
-    {
-      "userId": 4,
-      "game": "HangMan",
       "score": 1,
       "id": 5
     },
     {
-      "userId": 4,
-      "game": "Tic-Tac-Toe",
-      "score": 1,
+      "userId": 1,
+      "game": "Sapper",
+      "score": 46,
       "id": 6
     },
     {
-      "userId": 4,
-      "game": "HangMan",
-      "score": 3,
+      "userId": 2,
+      "game": "Memory Game",
+      "score": 6,
       "id": 7
     },
     {
-      "userId": 4,
-      "game": "HangMan",
-      "score": 2,
+      "userId": 2,
+      "game": "Sapper",
+      "score": 30,
       "id": 8
     },
     {
-      "userId": 4,
+      "userId": 2,
       "game": "HangMan",
-      "score": 4,
+      "score": 6,
       "id": 9
     },
     {
       "userId": 4,
-      "game": "Tetris",
-      "score": 2,
+      "game": "HangMan",
+      "score": 3,
       "id": 10
     },
     {
       "userId": 4,
-      "game": "HangMan",
-      "score": 3,
+      "game": "Tetris",
+      "score": 10,
       "id": 11
     },
     {
-      "userId": {
-        "email": "areghovhannisya@gmail.com",
-        "firstName": "areg",
-        "lastName": "areg",
-        "id": 4
-      },
-      "game": "sapper",
-      "score": 1,
+      "userId": 4,
+      "game": "Memory Game",
+      "score": 7,
       "id": 12
     },
     {

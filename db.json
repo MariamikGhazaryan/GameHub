@@ -89,6 +89,18 @@
       "game": "Tetris",
       "score": 2,
       "id": 10
+    },
+    {
+      "userId": 3,
+      "game": "Game2048",
+      "score": 1320,
+      "id": 11
+    },
+    {
+      "userId": 3,
+      "game": "NumberPuzzle",
+      "score": 3,
+      "id": 12
     }
   ]
 }

@@ -3,6 +3,9 @@ import TileView from '../tileView/tileView';
 import Cell from '../cage/cage';
 import { EndGame } from '../endGame/endGame';
 import './mainBoard.css';
+import {userSelector} from '../../../../../redux/selectors';
+import { connect } from "react-redux";
+import {addGameScore} from '../../../../../helpers/helper';
 
 const rotateLeft = function (matrix) {
 	const rows = matrix.length;
@@ -193,7 +196,7 @@ Board.prototype.hasLost = function () {
 	return !canMove;
 };
 
-export default class Game2048 extends Component {
+class Game2048 extends Component {
 	constructor(props) {
 		super(props);
 		this.state = { board: new Board() };
@@ -201,6 +204,9 @@ export default class Game2048 extends Component {
 	}
 
 	restartGame() {
+		const score = this.state.board.score;
+		const { currentUser } = this.props;
+		addGameScore(currentUser.id, "Game2048", score);
 		this.setState({ board: new Board() });
 	}
 
@@ -272,7 +278,10 @@ export default class Game2048 extends Component {
 			.map((tile) => <TileView tile={tile} key={tile.id} />);
 		return (
 			<div className='box'>
-				<h1 className='header-2048'>2048</h1>
+				<div className="exo">
+					<h1 className='header-2048'>2048</h1>
+					<button className='buttonScore'>Score {this.state.board.score}</button>
+				</div>
 				<div
 					className='billing'
 					onTouchStart={this.handleTouchStart.bind(this)}
@@ -281,8 +290,6 @@ export default class Game2048 extends Component {
 				>
 					{cells}
 					{tiles}
-					<button className='buttonScore'>Score {this.state.board.score}</button>
-
 					<EndGame
 						board={this.state.board}
 						onRestart={this.restartGame.bind(this)}
@@ -292,3 +299,5 @@ export default class Game2048 extends Component {
 		);
 	}
 }
+
+export default connect(userSelector)(Game2048);

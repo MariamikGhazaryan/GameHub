@@ -1,6 +1,7 @@
 import './score.css';
 import { useEffect } from 'react';
 
+// eslint-disable-next-line no-unused-vars
 function useSelector(tetrisSelector) {}
 
 function useDispatch() {
@@ -13,16 +14,15 @@ export default function Score() {
 	const { clearedRowsCount, score } = useSelector(tetrisSelector);
 	const dispatch = useDispatch();
 
-	function scoreAction(param) {
+	function scoreAction() {
 		return undefined;
 	}
 
 	useEffect(() => {
 		dispatch(
-			scoreAction({
-				score: clearedRowsCount,
-			})
+			scoreAction()
 		);
 	}, [clearedRowsCount]);
+	// eslint-disable-next-line react/react-in-jsx-scope
 	return <div className='billing'>Score : {score}</div>;
 }

@@ -5,13 +5,16 @@ import {connect} from 'react-redux';
 import Display from './components/presentation/Display';
 import Button from './components/containers/ButtonMove';
 import {ButtonPlay, ButtonReset,} from './components/containers/ButtonGameControl';
-
+import { addGameScore } from "../../../helpers/helper";
 import './styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NumberPuzzle = (props) => {
-		const { store } = props;
+	console.log(props, 7777)
 
+	const { store } = props.store;
+	const { currentUser } = props.currentUser;
+	console.log(currentUser)
 		return (
 			<Grid
 				className={
@@ -69,7 +72,7 @@ const NumberPuzzle = (props) => {
 					} else {
 						return (
 							<Row>
-								<Col>
+								<Col onClick={() => addGameScore(currentUser.id, "NumberPuzzle", store.game.moviments)}>
 									<ButtonReset />
 								</Col>
 							</Row>
@@ -82,7 +85,8 @@ const NumberPuzzle = (props) => {
 
 function mapStateToProps(state) {
     return {
-        store: state.NumberPuzzle,
+        store: {store: state.NumberPuzzle},
+				currentUser: state.UserDuck,
     };
 }
 
